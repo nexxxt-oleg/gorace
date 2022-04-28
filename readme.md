@@ -1,1 +1,1 @@
-https://nexxxt-oleg.github.io/gorace/app/
+https://nexxxt-oleg.github.io/gorace/dist/
