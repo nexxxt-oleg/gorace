@@ -1,0 +1,208 @@
+.go__home-slider {
+  position: relative;
+  z-index: 1;
+  background-color: #000;
+  overflow: hidden;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 11;
+    bottom: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 120px solid #f4f4f4;
+    left: 0;
+    width: 0;
+    height: 0;
+  }
+  &__item {
+    position: relative;
+    z-index: 1;
+    &__img {
+      position: relative;
+      z-index: 1;
+      img {
+        display: block;
+        width: 100vw;
+        max-height: 788px;
+        height: calc(100vh - 125px);
+        min-height: 400px;
+        object-fit: cover;
+      }
+    }
+    &__wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      z-index: 2;
+    }
+    &__text {
+      max-height: 635px;
+      height: 100%;
+      padding: 30px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h2 {
+        margin: 0 auto 15px -15px;
+        padding: 20px 15px;
+        background-color: rgba(0,0,0,0.7);
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 40px;
+        font-family: 'Russo One';
+        color: #fff;
+      }
+      &__p {
+        max-width: 660px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 24px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+      }
+      &__link {
+        padding-top: 20px;
+      }
+    }
+  }
+  &__footer {
+    position: absolute;
+    z-index: 21;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 34px;
+  }
+  &__pagination {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    .swiper-pagination-bullet {
+      position: relative;
+      margin: 0 0 10px 30px;
+      width: 70px;
+      height: 9px;
+      padding: 3px 0;
+      cursor: pointer;
+      overflow: hidden;
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        position: relative;
+        z-index: 1;
+        background-color: #d9d9d9;
+      }
+      &::before {
+        content: "";
+        display: block;
+        width: 39px;
+        height: 3px;
+        position: absolute;
+        z-index: 2;
+        left: -4px;
+        top: 3px;
+        background-color: #cc0000;
+        margin-left: -40px;
+        transition: all 0.2s ease-in-out;
+        transform: skew(-45deg, 0);
+      }
+      &-active {
+        &::before {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  &__nav {
+    position: absolute;
+    z-index: 20;
+    top: -350px;
+    color: #cc0000;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    border-radius: 12px;
+    background-color: rgba(2565,255,255,0.6);
+    transition:all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-color: rgba(2565,255,255,0.9);
+    }
+
+    &.prev {
+      left: -75px;
+    }
+    &.next {
+      right: -75px;
+    }
+  }
+}
+.swiper-lazy:not(.swiper-lazy-loaded) {
+  opacity: 0;
+}
+.go__home-category {
+  background: #f4f4f4;
+  padding: 50px 0 20px;
+}
+.go {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+.swiper-button-disabled {
+  opacity: 0;
+}
+.fpad30 {
+  padding-bottom: 30px;
+}
+.go__box-catalog {
+  height: 240px;
+  background-color: #fff;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 30px;
+  &__caption {
+    display: block;
+    color: #252525;
+    text-decoration: none;
+    font-family: 'Russo One';
+    font-size: 18px;
+    line-height: 24px;
+  }
+  &__list {
+    padding-right: 50px;
+    padding-top: 10px;
+    li {
+      padding-bottom: 5px;
+      a {
+        display: block;
+        font-size: 13px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #252525;
+      }
+    }
+  }
+}
+.go__title {
+  h2 {
+    font-family: 'Russo One';
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+}
