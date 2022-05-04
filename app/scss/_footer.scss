@@ -1,0 +1,159 @@
+.atb__footer {
+  background-color: #131313;
+  &__submit {
+    background-color: #2a2a2a;
+    &__label {
+      position: relative;
+      z-index: 10;
+      padding: 10px 0 10px 100px;
+      font-family: 'Russo One';
+      font-size: 18px;
+      line-height: 20px;
+      color: #fff;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 460.8 266.24'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%23fff;%7D.cls-2%7Bfill:%23c00;%7D%3C/style%3E%3C/defs%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Layer_1' data-name='Layer 1'%3E%3Cpath class='cls-1' d='M419.84,0H102.4a41.08,41.08,0,0,0-41,41V56.32a10.24,10.24,0,1,0,20.48,0V41a25.68,25.68,0,0,1,1-6.14l114.69,98.3L82.94,231.42a25.68,25.68,0,0,1-1-6.14V209.92a10.24,10.24,0,1,0-20.48,0v15.36a41.08,41.08,0,0,0,41,41H419.84a41.08,41.08,0,0,0,41-41V41A41.08,41.08,0,0,0,419.84,0ZM98.3,21a10,10,0,0,1,4.1-.51H419.84a10,10,0,0,1,4.1.51L267.78,154.62a10.76,10.76,0,0,1-13.32,0ZM419.84,245.76H102.4a10,10,0,0,1-4.1-.51l115.2-98.82,27.65,24.07a29.8,29.8,0,0,0,39.94,0l27.65-24.07,115.2,98.82A10,10,0,0,1,419.84,245.76Zm20.48-20.48a25.68,25.68,0,0,1-1,6.14l-114.69-98.3L439.3,34.82a25.68,25.68,0,0,1,1,6.14Z'/%3E%3Cpath class='cls-2' d='M30.72,107.52A10.27,10.27,0,0,1,41,97.28H102.4a10.24,10.24,0,1,1,0,20.48H41A10.27,10.27,0,0,1,30.72,107.52Z'/%3E%3Cpath class='cls-2' d='M102.4,169H10.24a10.24,10.24,0,0,1,0-20.48H102.4a10.24,10.24,0,0,1,0,20.48Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background-position: 10px 50%;
+      background-repeat: no-repeat;
+      background-size: 48px auto;
+      span {
+        color: #cc0000;
+      }
+    }
+    &__right {
+      z-index: 1;
+      position: relative;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      background-color: #383838;
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 5;
+        background-color: #383838;
+        display: block;
+        top: 0;
+        left: -50px;
+        width: 140px;
+        height: 100%;
+        transform: skew(45deg,0);
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 5;
+        background-color: #383838;
+        display: block;
+        top: 0;
+        left: 100%;
+        width: 50vw;
+        height: 100%;
+      }
+    }
+    &__form {
+      position: relative;
+      z-index: 20;
+      &__inp-col {
+        width: 100px;
+        flex-grow: 1;
+        padding-right: 30px;
+        input {
+          width: 100%;
+          background: transparent;
+          border-width: 0 0 1px 0;
+          border-style: solid;
+          border-color: #dbdbdb;
+          height: 40px;
+          color: #dbdbdb;
+          font-size: 12px;
+          line-height: 40px;
+          padding: 0;
+          &::placeholder {
+            color: #dbdbdb;
+            opacity: 1;
+          }
+        }
+      }
+      &__submit-col {
+        width: 170px;
+        min-width: 170px;
+      }
+    }
+  }
+  &__nav {
+    &__caption {
+      display: block;
+      padding-bottom: 10px;
+      font-family: 'Russo One';
+      font-size: 14px;
+      line-height: 16px;
+      color: #fff;
+    }
+    &__list {
+
+      li {
+        padding-bottom: 3px;
+      }
+      a {
+        display: block;
+        font-size: 13px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #858585;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+  &__contacts {
+    color: #fff;
+    padding-bottom: 45px;
+    .tel {
+      display: block;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 15px;
+    }
+    .work-time {
+      margin-bottom: 20px;
+      color: #fff;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    .address {
+      color: #fff;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  &__bottom {
+    border-top: 1px solid #2a2a2a;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    a {
+      font-size: 12px;
+      line-height: 20px;
+      color: #858585;
+      text-decoration: none;
+      &:hover {
+        color: #fff;
+      }
+    }
+    .atb__copy {
+      font-size: 12px;
+      line-height: 20px;
+      color: #fff;
+    }
+    .atb__web {
+      font-size: 12px;
+      line-height: 20px;
+      color: #858585;
+    }
+  }
+}
+.z-index-2 {
+  z-index: 2;
+  position: relative;
+}

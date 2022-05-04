@@ -198,6 +198,12 @@ body {
       z-index: 20;
       & > li {
         padding: 0 30px 0 0;
+        &:hover .navbar-nav__sub  {
+          transition: all 0.3s ease-in-out;
+          margin-top: 0;
+          opacity: 1;
+          visibility: visible;
+        }
         & > a {
           display: flex;
           height: 54px;
@@ -207,6 +213,29 @@ body {
           color: #c1c1c1;
           text-transform: uppercase;
           font-family: 'Russo One';
+          position: relative;
+          white-space: nowrap;
+          &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            display: flex;
+            height: 54px;
+            align-items: center;
+            width: 0;
+            color: #fff;
+            content: attr(data-hover);
+            -webkit-transition: width 0.5s;
+            -moz-transition: width 0.5s;
+            transition: width 0.5s;
+            white-space: nowrap;
+          }
+          &:hover {
+            &::before {
+              width: 100%;
+            }
+          }
         }
       }
     }
@@ -236,4 +265,76 @@ body {
       color: #252525;
     }
   }
+}
+.go__header__dop-nav__list {
+  li {
+    padding-bottom: 10px;
+    a {
+      display: block;
+      color: #252525;
+      text-decoration: none;
+      font-size: 13px;
+      line-height: 24px;
+      &:hover {
+        color: #cc0000;
+      }
+    }
+  }
+}
+.navbar-nav__sub {
+  position: absolute;
+  z-index: 40;
+  top: 100%;
+  left: -25px;
+  right: -25px;
+  padding: 40px 55px 10px;
+  background: #f4f4f4;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 30px;
+  &__level1 {
+    display: block;
+    margin-bottom: 15px;
+    color: #252525;
+    font-family: 'Russo One';
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    &:hover {
+      color: #cc0000;
+    }
+  }
+  &__level2 {
+    padding-bottom: 5px;
+    li{
+      padding-bottom: 5px;
+      a {
+        display: block;
+        font-size: 13px;
+        line-height: 24px;
+        color: #252525;
+        text-decoration: none;
+        &:hover {
+          color: #cc0000;
+        }
+      }
+    }
+  }
+  &__more {
+    display: inline-block;
+    color: #252525;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    vertical-align: top;
+    font-weight: 500;
+    border-bottom: 1px solid #cc0000;
+    &:hover {
+      color: #cc0000;
+      border-color: transparent;
+    }
+  }
+}
+a:hover {
+  color: #cc0000;
 }

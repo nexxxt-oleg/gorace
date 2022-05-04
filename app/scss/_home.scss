@@ -174,6 +174,12 @@
   background-repeat: no-repeat;
   background-size: contain;
   padding: 30px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+  }
   &__caption {
     display: block;
     color: #252525;
@@ -193,16 +199,44 @@
         line-height: 20px;
         text-decoration: none;
         color: #252525;
+        &:hover {
+          color: #cc0000;
+        }
       }
     }
   }
 }
 .go__title {
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: space-between;
   h2 {
     font-family: 'Russo One';
     font-size: 30px;
     line-height: 36px;
     margin: 0;
-    padding-bottom: 30px;
+    padding: 0;
   }
+  .go__more-link{
+    margin-top: 4px;
+  }
+}
+.tpad50 {
+  padding-top: 50px;
+}
+.go__more-link {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #252525;
+  font-weight: bold;
+  display: inline-block;
+  border-bottom: 1px solid #cc0000;
+  height: 20px;
+  &:hover {
+    border-color: transparent;
+  }
+}
+.fpad50 {
+  padding-bottom: 50px;
 }
