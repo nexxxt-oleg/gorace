@@ -151,6 +151,18 @@
       background-color: #33ab13;
     }
   }
+  &--under {
+    color: #cc0000;
+    &::after {
+      background-color: #cc0000;
+    }
+  }
+  &--out-of-stock {
+    color: #6f6f6f;
+    &::after {
+      background-color: #6f6f6f;
+    }
+  }
 }
 .atb__category-link {
   display: block;
