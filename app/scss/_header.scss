@@ -142,6 +142,9 @@ body {
     &__login {
       color: #fff;
       text-decoration: none;
+      &:hover {
+        color: #fff;
+      }
     }
     &__cart {
       color: #fff;
@@ -163,7 +166,9 @@ body {
         font-size: 10px;
         line-height: 1;
         font-weight: 500;
-
+      }
+      &:hover {
+        color: #fff;
       }
     }
   }

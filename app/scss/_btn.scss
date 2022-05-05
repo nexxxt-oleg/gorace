@@ -14,17 +14,17 @@
     padding: 5px;
   }
   &--red {
-    background-color: #cc0000;
+    background-color: #ba0000;
     &::after,
     &::before {
-      background-color: #ba0000;
+      background-color: #cc0000;
     }
   }
   &--black {
-    background-color: #383838;
+    background-color: #2a2a2a;
     &::after,
     &::before {
-      background-color: #2a2a2a;
+      background-color: #383838;
     }
   }
   span {
@@ -44,8 +44,8 @@
     position: absolute;
     z-index: 2;
     top: 0;
-    left: 50%;
-    margin-left: 30px;
+    right: 50%;
+    margin-right: 30px;
     height: 100%;
     width: 100%;
     transition: all 0.3s ease-in-out 0.2s;
@@ -56,7 +56,7 @@
     position: absolute;
     z-index: 2;
     top: 0;
-    left: 50%;
+    right: 50%;
     transform-origin: center center;
     transform: skew(45deg, 0);
     height: 100%;
@@ -68,8 +68,8 @@
   }
   &:hover {
     &::after {
-      margin-left: 0;
-      left: 0;
+      margin-right: 0;
+      right: 0;
     }
     &::before {
       transform: skew(0, 0);
@@ -101,6 +101,17 @@
   height: 40px;
   width: 100%;
   position: relative;
+  &--h60 {
+    height: 60px;
+    input {
+      height: 60px !important;
+      font-size: 14px !important;
+      padding: 0 40px;
+    }
+    span {
+      width: 40px !important;
+    }
+  }
   input {
     width: 100%;
     height: 40px;
@@ -110,6 +121,8 @@
     border: none;
     font-weight: bold;
     font-size: 12px;
+    display: flex;
+    align-items: center;
     color: #252525;
   }
   span {

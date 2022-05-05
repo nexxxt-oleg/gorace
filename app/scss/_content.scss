@@ -103,6 +103,10 @@
       font-family: 'Russo One';
       font-size: 16px;
       line-height: 18px;
+      &--big {
+        font-size: 28px;
+        line-height: 36px;
+      }
     }
     .old-price {
       display: inline-block;
@@ -111,6 +115,18 @@
       font-family: 'Russo One';
       font-size: 16px;
       line-height: 18px;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 8px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #d9d9d9;
+      }
+
     }
   }
   &__footer {
@@ -248,4 +264,19 @@
       opacity: 1;
     }
   }
+}
+.go__link-border {
+  color: #252525;
+  text-decoration: none;
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 13px;
+  border-bottom: 1px solid #cc0000;
+  &:hover {
+    border-color: transparent;
+    color: #252525;
+  }
+}
+.fpad25 {
+  padding-bottom: 25px;
 }
