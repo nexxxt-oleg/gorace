@@ -46,7 +46,8 @@
                                 <button type="submit" class="go__btn go__btn--red go__btn--h40 mb-25">
                                     <span>ВОЙТИ</span>
                                 </button>
-                                <a href="#passModal" data-bs-target="#passModal" data-bs-toggle="modal" data-bs-dismiss="modal">Забыли свой пароль?</a>
+                                <a href="#passModal" data-bs-target="#passModal" data-bs-toggle="modal"
+                                   data-bs-dismiss="modal">Забыли свой пароль?</a>
                             </div>
                         </div>
                     </div>
@@ -106,6 +107,40 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="passModal" tabindex="-1">
+    <div class="modal-dialog go__modal">
+        <div class="modal-content">
+            <button class="go__modal__btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <svg class="icon" width="20" height="20">
+                    <use xlink:href="#svg-close2"></use>
+                </svg>
+            </button>
+            <div class="go__modal__logo">
+                <img src="images/dist/logo.svg" width="228" height="28" alt="">
+            </div>
+            <div class="go__form">
+                <div class="go__form__desc">
+                    <div class="h2">Забыли пароль?</div>
+                    Если вы забыли пароль, введите E-Mail.<br>
+                    Контрольная строка для смены пароля, а также ваши<br>
+                    регистрационные данные, будут высланы вам по E-Mail.
+                </div>
+                <div class="go__form__row">
+                    <label class="form-label">E-mail</label>
+                    <input type="email" class="form-control" name="email" required>
+                </div>
+                <div class="go__form__footer">
+                    <button type="submit" class="go__btn go__btn--red go__btn--h40 mb-25">
+                        <span class="text-uppercase">выслать</span>
+                    </button>
+                    <a href="#regModal" data-bs-target="#regModal" data-bs-toggle="modal" data-bs-dismiss="modal">Авторизация</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
     function passOpen(e) {
         if (e.previousElementSibling.type == 'text') {
