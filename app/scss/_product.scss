@@ -211,7 +211,7 @@ h2 {
     }
   }
 }
-.atb__text {
+.go__text {
   color: #252525;
   p {
     font-size: 13px;
@@ -221,6 +221,13 @@ h2 {
   }
   b {
     font-weight: bold;
+  }
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid #cc0000;
+    &:hover {
+      border-color: transparent;
+    }
   }
 }
 .go__page-product__data {
@@ -238,4 +245,7 @@ h2 {
   .go__carusel {
     margin-bottom: 0 !important;
   }
+}
+.mb-25 {
+  margin-bottom: 25px;
 }

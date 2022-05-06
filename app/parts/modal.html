@@ -1,0 +1,117 @@
+<div class="modal fade" id="regModal" tabindex="-1">
+    <div class="modal-dialog go__modal">
+        <div class="modal-content">
+            <button class="go__modal__btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <svg class="icon" width="20" height="20">
+                    <use xlink:href="#svg-close2"></use>
+                </svg>
+            </button>
+            <div class="go__modal__logo">
+                <img src="images/dist/logo.svg" width="228" height="28" alt="">
+            </div>
+            <div class="go__modal__tabs">
+                <ul class="nav go__page-product__tab">
+                    <li class="nav-item go__page-product__tab__item">
+                        <div class="nav-link active" data-bs-toggle="tab" data-bs-target="#nav-auth">
+                            Авторизация
+                        </div>
+                    </li>
+                    <li class="nav-item go__page-product__tab__item">
+                        <div class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-reg">
+                            Регистрация
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="tab-content tpad25">
+                    <div class="tab-pane fade show active" id="nav-auth">
+                        <div class="go__form">
+                            <div class="go__form__row">
+                                <label class="form-label">E-mail</label>
+                                <input type="email" class="form-control" name="email" required>
+                            </div>
+                            <div class="go__form__row">
+                                <label class="form-label">Пароль</label>
+                                <div class="go__form__inp-pass">
+                                    <input type="password" class="form-control" name="pass" required>
+                                    <span onclick="passOpen(this)" class="pass-open">
+                                        <svg class="icon" width="18" height="10">
+                                            <use xlink:href="#svg-views"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="go__form__footer">
+                                <button type="submit" class="go__btn go__btn--red go__btn--h40 mb-25">
+                                    <span>ВОЙТИ</span>
+                                </button>
+                                <a href="#passModal" data-bs-target="#passModal" data-bs-toggle="modal" data-bs-dismiss="modal">Забыли свой пароль?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-reg">
+                        <div class="go__form">
+                            <div class="go__form__row">
+                                <label class="form-label">Фамилия*</label>
+                                <input type="text" class="form-control" name="surname" required>
+                            </div>
+                            <div class="go__form__row">
+                                <label class="form-label">Имя*</label>
+                                <input type="text" class="form-control" name="name" required>
+                            </div>
+                            <div class="go__form__row">
+                                <label class="form-label">Отчество*</label>
+                                <input type="text" class="form-control" name="patronymic" required>
+                            </div>
+                            <div class="go__form__row">
+                                <label class="form-label">E-mail*</label>
+                                <input type="email" class="form-control" name="email" required>
+                            </div>
+                            <div class="go__form__row">
+                                <label class="form-label">Телефон*</label>
+                                <input type="tel" class="form-control js-inp-tel" name="tel" required>
+                            </div>
+                            <div class="go__form__row">
+                                <label class="form-label">Пароль</label>
+                                <div class="go__form__inp-pass">
+                                    <input type="password" class="form-control" name="pass" required>
+                                    <span onclick="passOpen(this)" class="pass-open">
+                                        <svg class="icon" width="18" height="10">
+                                            <use xlink:href="#svg-views"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="go__form__row">
+                                <label class="form-label">Подтверждение пароля:*</label>
+                                <div class="go__form__inp-pass">
+                                    <input type="password" class="form-control" name="pass2" required>
+                                    <span onclick="passOpen(this)" class="pass-open">
+                                        <svg class="icon" width="18" height="10">
+                                            <use xlink:href="#svg-views"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="go__form__footer">
+                                <button type="submit" class="go__btn go__btn--red go__btn--h40 ">
+                                    <span class="text-uppercase">зарегистрироваться</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function passOpen(e) {
+        if (e.previousElementSibling.type == 'text') {
+            e.previousElementSibling.type = 'password';
+        } else {
+            e.previousElementSibling.type = 'text';
+        }
+    }
+</script>

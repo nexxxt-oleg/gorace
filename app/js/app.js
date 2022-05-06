@@ -6,6 +6,7 @@ import '~/node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 import '~/node_modules/@fancyapps/ui/dist/fancybox.umd.js'
 import './smooth-scroll.polyfills.min.js'
 import './lazyload.min.js'
+import './imask.min.js'
 
 
 
@@ -32,10 +33,10 @@ function setEqualHeight(elements) {
     }
 }
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('homeSlider')) {
-
-
 
         new Swiper('#homeSlider', {
 
@@ -214,5 +215,18 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.nav-link[data-bs-target="#nav-analog"]').click();
         });
     }
+
+
+    let phones = document.getElementsByClassName('js-inp-tel');
+    if(phones.length > 0) {
+        for (var i = 0; i < phones.length; ++i) {
+
+            IMask(phones[i], {
+                mask: '+{7}(000)000-00-00',
+                lazy: false
+            });
+        }
+    }
+
 
 })
