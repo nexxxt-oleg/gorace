@@ -59,14 +59,61 @@
                                     </button>
                                 </div>
                                 <div class="go__header__top__col-login">
-                                    <a class="go__header__top__login" data-bs-toggle="modal" data-bs-target="#regModal" href="#regModal">
-                                        <svg class="icon" width="23" height="24">
-                                            <use xlink:href="#svg-user"></use>
-                                        </svg>
-                                    </a>
+                                    <div class="go__header__lk-link">
+                                        <a class="go__header__top__login active" data-bs-toggle="modal"
+                                           data-bs-target="#regModal" href="#regModal">
+                                            <svg class="icon" width="23" height="24">
+                                                <use xlink:href="#svg-user"></use>
+                                            </svg>
+                                        </a>
+                                        <nav class="go__header__lk-link__sub-menu">
+                                            <ul class="nav d-block">
+                                                <li>
+                                                    <a href="">
+                                                        <div class="go__header__lk-link__sub-menu__ico">
+                                                            <svg class="icon" width="18" height="13">
+                                                                <use xlink:href="#svg-lk1"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Личные данные</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <div class="go__header__lk-link__sub-menu__ico">
+                                                            <svg class="icon" width="18" height="18">
+                                                                <use xlink:href="#svg-lk2"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Мои заказы</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <div class="go__header__lk-link__sub-menu__ico">
+                                                            <svg class="icon" width="18" height="13">
+                                                                <use xlink:href="#svg-lk3"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Рассылки</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <div class="go__header__lk-link__sub-menu__ico">
+                                                            <svg class="icon" width="18" height="17">
+                                                                <use xlink:href="#svg-lk4"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <span>Выйти</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
                                 </div>
                                 <div class="go__header__top__col-cart">
-                                    <a class="go__header__top__cart"  href="">
+                                    <a class="go__header__top__cart" href="">
                                         <span class="go__header__top__cart__number">10</span>
                                         <svg class="icon" width="28" height="24">
                                             <use xlink:href="#svg-cart"></use>
@@ -299,91 +346,91 @@
         </div>
     </div>
 </div>
-    <footer class="atb__footer">
-        <div class="atb__footer__submit">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 z-index-2">
-                        <div class="atb__footer__submit__label">
-                            Подпишитесь на последние сообщения<br>
-                            <span>об акциях и скидках</span>
-                        </div>
+<footer class="atb__footer">
+    <div class="atb__footer__submit">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 z-index-2">
+                    <div class="atb__footer__submit__label">
+                        Подпишитесь на последние сообщения<br>
+                        <span>об акциях и скидках</span>
                     </div>
-                    <div class="col-lg-6 atb__footer__submit__right">
-                        <div class="atb__footer__submit__form">
-                            <form action="" class="atb__footer__submit__form__wrap">
-                                <div class="d-flex">
-                                    <div class="atb__footer__submit__form__inp-col">
-                                        <input type="email" placeholder="Ваша электронная почта">
-                                    </div>
-                                    <div class="atb__footer__submit__form__submit-col">
-                                        <button class="go__btn go__btn--red w-100 go__btn--h40">
-                                            <span>Подписаться</span>
-                                        </button>
-                                    </div>
+                </div>
+                <div class="col-lg-6 atb__footer__submit__right">
+                    <div class="atb__footer__submit__form">
+                        <form action="" class="atb__footer__submit__form__wrap">
+                            <div class="d-flex">
+                                <div class="atb__footer__submit__form__inp-col">
+                                    <input type="email" placeholder="Ваша электронная почта">
                                 </div>
-                            </form>
-                        </div>
+                                <div class="atb__footer__submit__form__submit-col">
+                                    <button class="go__btn go__btn--red w-100 go__btn--h40">
+                                        <span>Подписаться</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container tpad50">
-            <div class="fpad50">
-                <a href="/" class="atb__footer__logo">
-                    <img src="images/dist/logo2.svg" width="215" height="26" alt="">
-                </a>
+    </div>
+    <div class="container tpad50">
+        <div class="fpad50">
+            <a href="/" class="atb__footer__logo">
+                <img src="images/dist/logo2.svg" width="215" height="26" alt="">
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 fpad50">
+                <nav class="atb__footer__nav">
+                    <div class="atb__footer__nav__caption">Каталог товаров</div>
+                    <ul class="nav d-block atb__footer__nav__list">
+                        <li><a href="">Двигатель</a></li>
+                        <li><a href="">Интерьер / Экстерьер</a></li>
+                        <li><a href="">Подвеска</a></li>
+                        <li><a href="">Тормозная система</a></li>
+                        <li><a href="">Трансмиссия</a></li>
+                        <li><a href="">Автоспорт</a></li>
+                        <li><a href="">Картинг</a></li>
+                        <li><a href="">Life Stylе</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="row">
-                <div class="col-lg-3 fpad50">
-                    <nav class="atb__footer__nav">
-                        <div class="atb__footer__nav__caption">Каталог товаров</div>
-                        <ul class="nav d-block atb__footer__nav__list">
-                            <li><a href="">Двигатель</a></li>
-                            <li><a href="">Интерьер / Экстерьер</a></li>
-                            <li><a href="">Подвеска</a></li>
-                            <li><a href="">Тормозная система</a></li>
-                            <li><a href="">Трансмиссия</a></li>
-                            <li><a href="">Автоспорт</a></li>
-                            <li><a href="">Картинг</a></li>
-                            <li><a href="">Life Stylе</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-lg-3 fpad50">
-                    <nav class="atb__footer__nav">
-                        <div class="atb__footer__nav__caption">Покупателям</div>
-                        <ul class="nav d-block atb__footer__nav__list">
-                            <li><a href="">Способ доставки</a></li>
-                            <li><a href="">Возврат и обмен товара</a></li>
-                            <li><a href="">Возврат денежных средств</a></li>
-                            <li><a href="">Вопросы и ответы</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-lg-3 fpad50">
-                    <nav class="atb__footer__nav">
-                        <div class="atb__footer__nav__caption">О магазине</div>
-                        <ul class="nav d-block atb__footer__nav__list">
-                            <li><a href="">О нас</a></li>
-                            <li><a href="">Контакты</a></li>
-                            <li><a href="">Карьера</a></li>
-                            <li><a href="">Блог</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-lg-3 fpad50">
-                    <div class="atb__footer__contacts">
-                        <a href="tel:+7 495 105-99-29" class="tel">+7 495 105-99-29</a>
-                        <div class="work-time">
-                            Пн-Пт 10:00 - 21:00   Сб  10:00 - 19:00
-                        </div>
-                        <div class="address">
-                            127238, г. Москва,<br>
-                            ул. Верхнелихоборская, д. 8
-                        </div>
+            <div class="col-lg-3 fpad50">
+                <nav class="atb__footer__nav">
+                    <div class="atb__footer__nav__caption">Покупателям</div>
+                    <ul class="nav d-block atb__footer__nav__list">
+                        <li><a href="">Способ доставки</a></li>
+                        <li><a href="">Возврат и обмен товара</a></li>
+                        <li><a href="">Возврат денежных средств</a></li>
+                        <li><a href="">Вопросы и ответы</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 fpad50">
+                <nav class="atb__footer__nav">
+                    <div class="atb__footer__nav__caption">О магазине</div>
+                    <ul class="nav d-block atb__footer__nav__list">
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Карьера</a></li>
+                        <li><a href="">Блог</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 fpad50">
+                <div class="atb__footer__contacts">
+                    <a href="tel:+7 495 105-99-29" class="tel">+7 495 105-99-29</a>
+                    <div class="work-time">
+                        Пн-Пт 10:00 - 21:00 Сб 10:00 - 19:00
                     </div>
-                    <ul class="nav go__soc">
+                    <div class="address">
+                        127238, г. Москва,<br>
+                        ул. Верхнелихоборская, д. 8
+                    </div>
+                </div>
+                <ul class="nav go__soc">
     <li>
         <a class="go__soc__item" href="" target="_blank">
             <svg class="icon" width="24" height="14">
@@ -413,23 +460,23 @@
         </a>
     </li>
 </ul>
-                </div>
             </div>
-            <div class="atb__footer__bottom">
-                <div class="row align-items-center">
-                    <div class="col-lg-3">
-                        <span class="atb__copy">© 2022 GoRace. Все права защищены.</span>
-                    </div>
-                    <div class="col-lg-6">
-                        <a href="">Политика конфиденциальности</a>
-                    </div>
-                    <div class="col-lg-3">
-                        <span class="atb__web">Разработка сайта - <a href="" target="_blank">Котиков Consulting</a></span>
-                    </div>
+        </div>
+        <div class="atb__footer__bottom">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <span class="atb__copy">© 2022 GoRace. Все права защищены.</span>
+                </div>
+                <div class="col-lg-6">
+                    <a href="">Политика конфиденциальности</a>
+                </div>
+                <div class="col-lg-3">
+                    <span class="atb__web">Разработка сайта - <a href="" target="_blank">Котиков Consulting</a></span>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 </div>
 
 
@@ -759,13 +806,55 @@
         </symbol>
 
         <symbol id="svg-views" viewBox="0 0 512 270">
-            <path d="M508.18,125C503.61,119.9,393.68,0,256,0S8.39,119.9,3.82,125a15,15,0,0,0,0,20C8.39,150.1,118.32,270,256,270S503.61,150.1,508.18,145A15,15,0,0,0,508.18,125ZM256,240A105,105,0,1,1,361,135,105.13,105.13,0,0,1,256,240Z"/>
-            <path d="M267,105a44.84,44.84,0,0,1,18.89-36.53A74.1,74.1,0,0,0,252,60a75,75,0,1,0,73.72,87.64C295.52,157.37,267,134.52,267,105Z"/>
+            <path fill="currentColor"
+                  d="M508.18,125C503.61,119.9,393.68,0,256,0S8.39,119.9,3.82,125a15,15,0,0,0,0,20C8.39,150.1,118.32,270,256,270S503.61,150.1,508.18,145A15,15,0,0,0,508.18,125ZM256,240A105,105,0,1,1,361,135,105.13,105.13,0,0,1,256,240Z"/>
+            <path fill="currentColor"
+                  d="M267,105a44.84,44.84,0,0,1,18.89-36.53A74.1,74.1,0,0,0,252,60a75,75,0,1,0,73.72,87.64C295.52,157.37,267,134.52,267,105Z"/>
         </symbol>
+
+        <symbol id="svg-lk1" viewBox="0 0 512 384">
+            <path fill="currentColor"
+                  d="M453.33,384H58.67A58.71,58.71,0,0,1,0,325.33V58.67A58.71,58.71,0,0,1,58.67,0H453.33A58.71,58.71,0,0,1,512,58.67V325.33A58.71,58.71,0,0,1,453.33,384ZM58.67,32A26.71,26.71,0,0,0,32,58.67V325.33A26.71,26.71,0,0,0,58.67,352H453.33A26.71,26.71,0,0,0,480,325.33V58.67A26.71,26.71,0,0,0,453.33,32Z"/>
+            <path fill="currentColor"
+                  d="M160,192a53.34,53.34,0,1,1,53.33-53.33A53.4,53.4,0,0,1,160,192Zm0-74.67a21.34,21.34,0,1,0,21.33,21.34A21.37,21.37,0,0,0,160,117.33Z"/>
+            <path fill="currentColor"
+                  d="M240,298.67a16,16,0,0,1-16-16V272a26.71,26.71,0,0,0-26.67-26.67H122.67A26.71,26.71,0,0,0,96,272v10.67a16,16,0,0,1-32,0V272a58.72,58.72,0,0,1,58.67-58.67h74.66A58.72,58.72,0,0,1,256,272v10.67A16,16,0,0,1,240,298.67Z"/>
+            <path fill="currentColor" d="M432,128H314.67a16,16,0,0,1,0-32H432a16,16,0,0,1,0,32Z"/>
+            <path fill="currentColor" d="M432,213.33H314.67a16,16,0,0,1,0-32H432a16,16,0,0,1,0,32Z"/>
+            <path fill="currentColor" d="M432,298.67H314.67a16,16,0,0,1,0-32H432a16,16,0,0,1,0,32Z"/>
+        </symbol>
+
+        <symbol id="svg-lk2" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                  d="M400,0H112A112,112,0,0,0,0,112V400A112,112,0,0,0,112,512H400A112,112,0,0,0,512,400V112A112,112,0,0,0,400,0Zm80,400a80,80,0,0,1-80,80H112a80,80,0,0,1-80-80V112a80,80,0,0,1,80-80H400a80,80,0,0,1,80,80Z"/>
+            <path fill="currentColor"
+                  d="M160,112H128a16,16,0,0,0-16,16v32a16,16,0,0,0,16,16h32a16,16,0,0,0,16-16V128A16,16,0,0,0,160,112Z"/>
+            <path fill="currentColor"
+                  d="M160,224H128a16,16,0,0,0-16,16v32a16,16,0,0,0,16,16h32a16,16,0,0,0,16-16V240A16,16,0,0,0,160,224Z"/>
+            <path fill="currentColor"
+                  d="M160,336H128a16,16,0,0,0-16,16v32a16,16,0,0,0,16,16h32a16,16,0,0,0,16-16V352A16,16,0,0,0,160,336Z"/>
+            <rect fill="currentColor" x="208" y="128" width="192" height="32"/>
+            <rect fill="currentColor" x="208" y="240" width="192" height="32"/>
+            <rect fill="currentColor" x="208" y="352" width="192" height="32"/>
+        </symbol>
+
+        <symbol id="svg-lk3" viewBox="0 0 512 360">
+            <path fill="currentColor"
+                  d="M467,0H45A45.06,45.06,0,0,0,0,45V315a45.06,45.06,0,0,0,45,45H467a45.06,45.06,0,0,0,45-45V45A45.06,45.06,0,0,0,467,0Zm-6.91,30L267.62,223.09c-5.86,5.89-17.38,5.89-23.24,0L51.91,30ZM30,309.48v-259L159.07,180ZM51.91,330,180.24,201.25l42.89,43c17.57,17.63,48.17,17.63,65.74,0l42.89-43L460.09,330ZM482,309.48,352.93,180,482,50.51Z"/>
+        </symbol>
+
+        <symbol id="svg-lk4" viewBox="0 0 490 468.7">
+            <path fill="currentColor" d="M324.89,250.33H16a16,16,0,1,1,0-32H324.89a16,16,0,1,1,0,32Z"/>
+            <path fill="currentColor" d="M239.67,335.54a16,16,0,0,1-11.29-27.29l73.93-73.92L228.38,160.4A16,16,0,0,1,251,137.8L336.2,223a16,16,0,0,1,0,22.6L251,330.84A15.89,15.89,0,0,1,239.67,335.54Z"/>
+            <path fill="currentColor" d="M255.65,468.7c-97,0-182.55-58.33-218.11-148.62A16,16,0,1,1,67.28,308.4c30.7,78,104.65,128.34,188.37,128.34,111.59,0,202.39-90.8,202.39-202.39S367.24,32,255.65,32C171.93,32,98,82.34,67.28,160.29a16,16,0,1,1-29.74-11.67C73.1,58.33,158.69,0,255.65,0,384.86,0,490,105.14,490,234.35S384.86,468.7,255.65,468.7Z"/>
+        </symbol>
+
     </svg>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
+        integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/app.min.js"></script>
-
-
 </body>
 </html>

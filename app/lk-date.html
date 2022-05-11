@@ -1,0 +1,54 @@
+<!--#set var="title" value="Личные данные" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="go__page-top">
+    <div class="container">
+        <!--#include virtual="/parts/breadcrumb.html" -->
+    </div>
+</div>
+
+<div class="container fpad50 ">
+    <div class="row">
+        <div class="col-lg-3">
+            <!--#include virtual="/parts/lk-left.html" -->
+        </div>
+        <div class="col-lg-9 fpad50">
+            <h1><!--#echo var="title" --></h1>
+            <div class="go__form go__form--v2 tpad25">
+                <div class="go__form__row">
+                    <label class="form-label">Фамилия*</label>
+                    <input type="text" class="form-control" name="surname" required="" value="Петя">
+                </div>
+                <div class="go__form__row">
+                    <label class="form-label">Имя*</label>
+                    <input type="text" class="form-control" name="name" required="">
+                </div>
+                <div class="go__form__row">
+                    <label class="form-label">Отчество*</label>
+                    <input type="text" class="form-control" name="patronymic" required="">
+                </div>
+                <div class="go__form__row">
+                    <label class="form-label">E-mail*</label>
+                    <input type="email" class="form-control" name="email" required="">
+                </div>
+                <div class="go__form__row">
+                    <label class="form-label">Телефон*</label>
+                    <input type="tel" class="form-control js-inp-tel" name="tel" required="">
+                </div>
+                <div class="go__form__row">
+                    <label class="form-label">Пароль</label>
+                    <input type="password" class="form-control" name="pass" required="" value="111111">
+                </div>
+                <div class="go__form__footer go__form__footer--left">
+                    <button type="submit" class="go__btn go__btn--red go__btn--h40">
+                        <span class="text-uppercase">редактировать</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

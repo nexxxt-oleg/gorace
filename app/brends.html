@@ -1,0 +1,134 @@
+<!--#set var="title" value="Блог" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="go__page-top">
+    <div class="container">
+        <!--#include virtual="/parts/breadcrumb.html" -->
+        <h1><!--#echo var="title" --></h1>
+    </div>
+</div>
+<div class="container fpad50">
+    <div class="go__title">
+        <h3>Популярные бренды</h3>
+    </div>
+    <div class="row fpad50">
+        <div class="col-lg-2 col-sm-4">
+            <div class="go__carusel__brend">
+                <img
+                        data-src="images/dist/brend1.jpg"
+                        data-srcset="images/dist/brend1@2x.jpg 2x"
+                        class="lazy"
+                        src=""
+                />
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4">
+            <div class="go__carusel__brend">
+                <img
+                        data-src="images/dist/brend2.jpg"
+                        data-srcset="images/dist/brend2@2x.jpg 2x"
+                        class="lazy"
+                        src=""
+                />
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4">
+            <div class="go__carusel__brend">
+                <img
+                        data-src="images/dist/brend3.jpg"
+                        data-srcset="images/dist/brend3@2x.jpg 2x"
+                        class="lazy"
+                        src=""
+                />
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4">
+            <div class="go__carusel__brend">
+                <img
+                        data-src="images/dist/brend4.jpg"
+                        data-srcset="images/dist/brend4@2x.jpg 2x"
+                        class="lazy"
+                        src=""
+                />
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4">
+            <div class="go__carusel__brend">
+                <img
+                        data-src="images/dist/brend5.jpg"
+                        data-srcset="images/dist/brend5@2x.jpg 2x"
+                        class="lazy"
+                        src=""
+                />
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4">
+            <div class="go__carusel__brend">
+                <img
+                        data-src="images/dist/brend6.jpg"
+                        data-srcset="images/dist/brend6@2x.jpg 2x"
+                        class="lazy"
+                        src=""
+                />
+            </div>
+        </div>
+    </div>
+
+    <div class="go__title row">
+        <div class="col-lg-3">
+            <h3>A-Z Список брендов</h3>
+        </div>
+        <div class="col-lg-9">
+            <ul class="nav go__filter-brends">
+                <li><button type="button" class="control" data-filter="[data-letter='A']">A</button></li>
+                <li><button type="button" class="control" data-filter="[data-letter='C']">C</button></li>
+                <li><button type="button" class="control" data-filter="[data-letter='D']">D</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="go__brends-list" id="brendsList">
+        <div class="mix" data-letter='A'>
+            <div class="go__brends-list__item">
+                <div class="go__brends-list__item__letter">
+                    A
+                </div>
+                <ul class="nav go__brends-list__item__letter-spisok">
+                    <li><a href="">ADR</a></li>
+                    <li><a href="">AKRAPOVIC</a></li>
+                    <li><a href="">AKRAPOVIC</a></li>
+                    <li><a href="">AKRAPOVIC</a></li>
+                    <li><a href="">AKRAPOVIC</a></li>
+                    <li><a href="">AKRAPOVIC</a></li>
+                    <li><a href="">AKRAPOVIC</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mix" data-letter='C'>
+            <div class="go__brends-list__item">
+                <div class="go__brends-list__item__letter">
+                   C
+                </div>
+                <ul class="nav go__brends-list__item__letter-spisok">
+                    <li><a href="">CADR</a></li>
+                    <li><a href="">CAKRAPOVIC</a></li>
+                    <li><a href="">CAKRAPOVIC</a></li>
+                    <li><a href="">CAKRAPOVIC</a></li>
+                    <li><a href="">CAKRAPOVIC</a></li>
+                    <li><a href="">CAKRAPOVIC</a></li>
+                    <li><a href="">CAKRAPOVIC</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mix" data-letter='D'>
+            <div class="go__brends-list__item">
+                <div class="go__brends-list__item__letter">
+                    D
+                </div>
+                <ul class="nav go__brends-list__item__letter-spisok">
+                    <li><a href="">DEFI</a></li>
+                    <li><a href="">DEFI</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--#include virtual="/parts/footer.html" -->

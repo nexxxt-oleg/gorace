@@ -10,6 +10,7 @@ import './imask.min.js'
 
 
 
+
 var lazyLoadInstance = new LazyLoad({
     // Your custom settings go here
 });
@@ -229,4 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    if (document.getElementById('brendsList')) {
+        mixitup(document.getElementById('brendsList'));
+    }
 })

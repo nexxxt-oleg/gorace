@@ -46,6 +46,8 @@
 		"webpack-stream": "^7.0.0"
 	},
 	"dependencies": {
+		"isotope-layout": "^3.0.6",
+		"mixitup": "^3.3.1",
 		"swiper": "^8.1.4"
 	}
 }
