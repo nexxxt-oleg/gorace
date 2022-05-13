@@ -1,0 +1,75 @@
+@media screen and (max-width: 991px) {
+  .go__coming-soon__left {
+    padding-top: 50px;
+  }
+  .go__coming-soon__title {
+    padding: 20px 0 30px;
+    margin: 0;
+  }
+  .go__coming-soon {
+    height: auto;
+  }
+  .go__coming-soon__right {
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: auto;
+  }
+  .go__coming-soon__right:after {
+    display: none;
+  }
+  .go__coming-soon__right__road {
+    width: 200vw;
+  }
+  .go__coming-soon__right__wrap {
+    padding-left: 0;
+    justify-content: center;
+  }
+  .go__coming-soon {
+    background: #383838;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .go__coming-soon .atb__footer__submit__form__wrap .d-flex {
+    display: block !important;
+  }
+  .go__coming-soon .atb__footer__submit__form__inp-col {
+    padding-right: 0;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .go__coming-soon .atb__footer__submit__form__submit-col {
+    min-width: 100%;
+    width: 100%;
+  }
+  .go__coming-soon .atb__footer__submit__form__submit-col .go__btn {
+    width: 100%;
+    text-align: center;
+  }
+  .go__coming-soon__right__wrap {
+    height: 180px;
+    img {
+      height: 140px;
+      width: auto;
+    }
+  }
+  .go__coming-soon__right__road {
+    height: 180px;
+    background-size: auto 5px;
+  }
+  .go__coming-soon__right__road:after {
+    background-size: auto 5px;
+  }
+  .go__coming-soon__title {
+    font-size: 20px;
+  }
+  .go__coming-soon__subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .go__coming-soon__left img {
+    width: 230px;
+    height: auto;
+  }
+}

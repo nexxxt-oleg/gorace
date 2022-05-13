@@ -233,4 +233,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('brendsList')) {
         mixitup(document.getElementById('brendsList'));
     }
+
+    var collapseElementList = [].slice.call(document.querySelectorAll('.go__order-info .collapse'))
+    var collapseList = collapseElementList.map(function (collapseEl) {
+        collapseEl.addEventListener('hidden.bs.collapse', function () {
+            collapseEl.parentNode.classList.toggle('active');
+        });
+        collapseEl.addEventListener('show.bs.collapse', function () {
+            collapseEl.parentNode.classList.toggle('active');
+        });
+    })
 })
