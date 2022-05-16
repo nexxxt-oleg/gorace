@@ -28,6 +28,129 @@
   .go__coming-soon {
     background: #383838;
   }
+  .go__header {
+    background-color: #fff;
+  }
+  .go__header__top__contacts {
+    text-align: right;
+  }
+  .go__header__mob-row {
+    position: relative;
+    display: flex;
+    background-color: #2a2a2a;
+  }
+  .go__header__top__left-mob {
+    display: block;
+    width: 50%;
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 100%;
+      width: 50vw;
+      background-color: #2a2a2a;
+      z-index: 10;
+      height: 100%;
+    }
+  }
+  .go__header__top__right {
+    width: 50%;
+    &::before {
+      width: 50vw;
+      transform: none;
+      right: auto;
+      left: 100%;
+    }
+  }
+  .go__header__search {
+    display: none;
+  }
+  .go__header__top__icons {
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .go__home-slider:after {
+    border-bottom-width: 40px;
+  }
+  .go__home-slider__footer {
+    bottom: -40px;
+  }
+  .go__home-slider {
+    overflow: visible;
+  }
+  .go__home-slider__item__img img {
+    height: 430px;
+  }
+  .go__home-slider__nav {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .go__home-slider__item__text .h2, .go__home-slider__item__text h2 {
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .go__btn {
+    min-height: 48px;
+  }
+  .go__btn--size1 {
+    width: 160px;
+  }
+  .go__header__top__contacts .time {
+    display: none;
+  }
+  .go__header__top__contacts .phone {
+    font-size: 12px;
+  }
+  .go__header__top__left {
+    height: 46px;
+  }
+  .go__header__logo {
+    img {
+      width: 160px;
+      height: auto;
+    }
+  }
+  .go__header__top__right {
+    height: 36px;
+    &::after {
+      left: -20px;
+    }
+  }
+  .go__header__lk-link {
+    height: 36px;
+  }
+  .go__header__top__icons>div {
+    margin-left: 5px;
+    width: 30px;
+  }
+  .go__header__top__login .icon,
+  .go__header__top__cart .icon {
+    width: 18px;
+    height: 18px;
+  }
+  .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    width: 16px;
+    height: 1.5px;
+  }
+  .hamburger-box {
+    height: 12px;
+    width: 16px;
+  }
+  .go__header__top__cart__number {
+    width: 14px;
+    height: 14px;
+    font-size: 8px;
+    line-height: 14px;
+    top: -2px;
+  }
+
 }
 
 @media screen and (max-width: 575px) {

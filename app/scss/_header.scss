@@ -202,7 +202,7 @@ body {
       position: absolute;
       z-index: 10;
       top: 0;
-      left: -53px;
+      left: -50px;
       width: 90px;
       height: 100%;
       background-color: #2a2a2a;
@@ -387,7 +387,7 @@ a:hover {
   li:not(:last-child) {
     padding-right: 14px;
     &::after {
-      content: '/';
+      content: '\\';
       margin-left: 14px;
       color: #cc0000;
       font-size: 12px;
@@ -508,4 +508,8 @@ a:hover {
     color: #252525;
   }
 
+}
+.go__header__search--mob,
+.go__header__top__left-mob {
+  display: none;
 }
