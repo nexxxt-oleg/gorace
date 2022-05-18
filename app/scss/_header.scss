@@ -227,10 +227,7 @@ body {
       & > li {
         padding: 0 30px 0 0;
         &:hover .navbar-nav__sub  {
-          transition: all 0.3s ease-in-out;
-          margin-top: 0;
-          opacity: 1;
-          visibility: visible;
+
         }
         & > a {
           display: flex;
@@ -292,6 +289,14 @@ body {
       line-height: 20px;
       color: #252525;
     }
+  }
+}
+@media screen and (min-width: 991.1px) {
+  .go__header__bottom .navbar-nav>li:hover .navbar-nav__sub {
+    transition: all 0.3s ease-in-out;
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
   }
 }
 .go__header__dop-nav__list {
@@ -511,5 +516,13 @@ a:hover {
 }
 .go__header__search--mob,
 .go__header__top__left-mob {
+  display: none !important;
+}
+.go__header__nav__level1__back,
+.go__header__nav__level1__close,
+.go__header__nav__level1__more,
+.go__header__nav__navbar__mob-top,
+.nav-item .go__header__mob-toggle__close,
+.go__header__nav__level2__toggle {
   display: none;
 }

@@ -36,7 +36,17 @@
                         </div>
                     </div>
                     <div class="col-lg-6 go__header__mob-row">
-                        <div class="go__header__top__left-mob"></div>
+                        <div class="go__header__top__left-mob">
+                            <button class="navbar-toggler collapsed go__header__mob-toggle"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navMainMenu"
+                            >
+                                <svg class="icon" width="24" height="24">
+                                    <use xlink:href="#svg-collapse"></use>
+                                </svg>
+                                КАТАЛОГ ТОВАРОВ
+                            </button>
+                        </div>
                         <div class="go__header__top__right">
                             <div class="go__header__search">
                                 <form action="" class="go__header__search__form">
@@ -48,14 +58,16 @@
                                     </button>
                                 </form>
                             </div>
-                            <div class="go__header__search--mob">
-                                <a href="" class="go__header__search__open">
-                                    <svg class="icon" width="16" height="16">
-                                        <use xlink:href="#svg-search"></use>
-                                    </svg>
-                                </a>
-                            </div>
+
                             <div class="d-flex align-items-center go__header__top__icons">
+                                <div class="go__header__search--mob">
+                                    <a href="" class="go__header__search__open">
+                                        <svg class="icon" width="24" height="24">
+                                            <use xlink:href="#svg-search"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+
                                 <div class="go__header__top__toggler">
                                     <button class="hamburger hamburger--collapse navbar-toggler collapsed"
                                             data-bs-toggle="collapse" data-bs-target="#navDopMenu" aria-expanded="false"
@@ -135,11 +147,188 @@
             <div class="go__header__bottom">
                 <div class="go__header__nav">
                     <nav class="navbar navbar-expand-lg navbar-light go__header__nav__navbar ">
-                        <div class="collapse navbar-collapse" id="navbar">
-
-                            <ul class="navbar-nav justify-content-between w-100">
+                        <div class="collapse navbar-collapse" id="navMainMenu">
+                            <div class="go__header__nav__navbar__mob-top">
+                                <div class="go__header__nav__navbar__mob-top__left">
+                                    <svg class="icon" width="18" height="18">
+                                        <use xlink:href="#svg-collapse"></use>
+                                    </svg>
+                                    КАТАЛОГ ТОВАРОВ
+                                </div>
+                                <span class="go__header__mob-toggle__close" data-bs-toggle="collapse" data-bs-target="#navMainMenu">
+                                    <svg class="icon" width="13" height="13">
+                                        <use xlink:href="#svg-close2"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <ul class="navbar-nav navbar-nav--level1 justify-content-between w-100">
                                 <li class="nav-item">
-                                    <a href="" data-hover="Двигатель">Двигатель</a>
+                                    <a href=""
+                                       data-hover="Двигатель"
+                                        class="go__header__nav__level1"
+                                    >
+                                        <div class="go__header__nav__level1__back">
+                                            <svg class="icon" width="13" height="10">
+                                                <use xlink:href="#svg-prev"></use>
+                                            </svg>
+                                        </div>
+                                        <span>Двигатель</span>
+                                        <div class="go__header__nav__level1__more">
+                                            <svg class="icon" width="13" height="13">
+                                                <use xlink:href="#svg-down"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <span class="go__header__mob-toggle__close" data-bs-toggle="collapse" data-bs-target="#navMainMenu">
+                                        <svg class="icon" width="13" height="13">
+                                            <use xlink:href="#svg-close2"></use>
+                                        </svg>
+                                    </span>
+                                    <div class="navbar-nav__sub">
+                                        <div class="row">
+                                            <div class="col-lg-3 fpad30">
+                                                <a href="" class="navbar-nav__sub__level1 js-level2">
+                                                    Воздушная система
+                                                    <div class="go__header__nav__level2__toggle">
+                                                        <svg class="icon" width="13" height="13">
+                                                            <use xlink:href="#svg-down"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                                <ul class="nav d-block navbar-nav__sub__level2">
+                                                    <li><a href="">Фильтры</a></li>
+                                                    <li><a href="">Шноркели</a></li>
+                                                    <li><a href="">Патрубки</a></li>
+                                                    <li><a href="">Впуск</a></li>
+                                                </ul>
+                                                <a href="" class="navbar-nav__sub__more">Показать еще</a>
+                                            </div>
+                                            <div class="col-lg-3 fpad30">
+                                                <a href="" class="navbar-nav__sub__level1 js-level2">
+                                                    Внутренние компоненты
+                                                    <div class="go__header__nav__level2__toggle">
+                                                        <svg class="icon" width="13" height="13">
+                                                            <use xlink:href="#svg-down"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                                <ul class="nav d-block navbar-nav__sub__level2">
+                                                    <li><a href="">Шатунно-поршневая группа</a></li>
+                                                    <li><a href="">Прокладки / сальники / опоры</a></li>
+                                                    <li><a href="">Гбц и компоненты</a></li>
+                                                    <li><a href="">Валы / вкладыши</a></li>
+                                                    <li><a href="">Система смазки</a></li>
+                                                </ul>
+                                                <a href="" class="navbar-nav__sub__more">Показать еще</a>
+                                            </div>
+                                            <div class="col-lg-3 fpad30">
+                                                <a href="" class="navbar-nav__sub__level1 js-level2">
+                                                    Турбо
+                                                    <div class="go__header__nav__level2__toggle">
+                                                        <svg class="icon" width="13" height="13">
+                                                            <use xlink:href="#svg-down"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                                <ul class="nav d-block navbar-nav__sub__level2">
+                                                    <li><a href="">Вестгейт</a></li>
+                                                    <li><a href="">Перепускные клапана</a></li>
+                                                    <li><a href="">Патрубки</a></li>
+                                                    <li><a href="">Турбо кит</a></li>
+                                                </ul>
+                                                <a href="" class="navbar-nav__sub__more">Показать еще</a>
+                                            </div>
+                                            <div class="col-lg-3 fpad30">
+                                                <a href="" class="navbar-nav__sub__level1 js-level2">
+                                                    Охлаждение
+                                                    <div class="go__header__nav__level2__toggle">
+                                                        <svg class="icon" width="13" height="13">
+                                                            <use xlink:href="#svg-down"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                                <ul class="nav d-block navbar-nav__sub__level2">
+                                                    <li><a href="">Радиаторы</a></li>
+                                                    <li><a href="">Патрубки</a></li>
+                                                    <li><a href="">Помпы / термостаты</a></li>
+                                                    <li><a href="">Вентиляторы</a></li>
+                                                </ul>
+                                                <a href="" class="navbar-nav__sub__more">Показать еще</a>
+                                            </div>
+                                            <div class="col-lg-3 fpad30">
+                                                <a href="" class="navbar-nav__sub__level1 js-level2">
+                                                    Топливная система
+                                                    <div class="go__header__nav__level2__toggle">
+                                                        <svg class="icon" width="13" height="13">
+                                                            <use xlink:href="#svg-down"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                                <ul class="nav d-block navbar-nav__sub__level2">
+                                                    <li><a href="">Насосы / рейки</a></li>
+                                                    <li><a href="">Регуляторы / измерители</a></li>
+                                                    <li><a href="">Баки</a></li>
+                                                    <li><a href="">Фитинги / горловины</a></li>
+                                                    <li><a href="">Присадки / фильтры</a></li>
+                                                    <li><a href="">Форсунки</a></li>
+                                                </ul>
+                                                <a href="" class="navbar-nav__sub__more">Показать еще</a>
+                                            </div>
+                                            <div class="col-lg-3 fpad30">
+                                                <a href="" class="navbar-nav__sub__level1"> Выхлопная система</a>
+                                                <ul class="nav d-block navbar-nav__sub__level2">
+                                                    <li><a href="">Выхлоп в сборе</a></li>
+                                                    <li><a href="">Банки выхлопа</a></li>
+                                                    <li><a href="">Термолента / аэрозоли</a></li>
+                                                    <li><a href="">Прокладки / крепеж</a></li>
+                                                </ul>
+                                                <a href="" class="navbar-nav__sub__more">Показать еще</a>
+                                            </div>
+                                            <div class="col-lg-3 fpad30">
+                                                <a href="" class="navbar-nav__sub__level1">Электрика</a>
+                                                <ul class="nav d-block navbar-nav__sub__level2">
+                                                    <li><a href="">Свечи / провода</a></li>
+                                                    <li><a href="">Чип тюнинг</a></li>
+                                                    <li><a href="">Контроллеры</a></li>
+                                                    <li><a href="">Прочее</a></li>
+                                                </ul>
+                                                <a href="" class="navbar-nav__sub__more">Показать еще</a>
+                                            </div>
+                                            <div class="col-lg-3 fpad30">
+                                                <a href="" class="navbar-nav__sub__level1">Система смазки</a>
+                                                <ul class="nav d-block navbar-nav__sub__level2">
+                                                    <li><a href="">Двигатель</a></li>
+                                                    <li><a href="">Трансмиссия</a></li>
+                                                    <li><a href="">Охлаждение</a></li>
+                                                    <li><a href="">Смазки / пропитки</a></li>
+                                                    <li><a href="">Фильтры</a></li>
+                                                </ul>
+                                                <a href="" class="navbar-nav__sub__more">Показать еще</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" data-hover="Интерьер"
+                                       class="go__header__nav__level1"
+                                    >
+                                        <div class="go__header__nav__level1__back">
+                                            <svg class="icon" width="13" height="10">
+                                                <use xlink:href="#svg-prev"></use>
+                                            </svg>
+                                        </div>
+                                        <span>Интерьер</span>
+                                        <div class="go__header__nav__level1__more">
+                                            <svg class="icon" width="13" height="13">
+                                                <use xlink:href="#svg-down"></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <span class="go__header__mob-toggle__close" data-bs-toggle="collapse" data-bs-target="#navMainMenu">
+                                        <svg class="icon" width="13" height="13">
+                                            <use xlink:href="#svg-close2"></use>
+                                        </svg>
+                                    </span>
                                     <div class="navbar-nav__sub">
                                         <div class="row">
                                             <div class="col-lg-3 fpad30">
@@ -230,10 +419,100 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" data-hover="Интерьер">Интерьер</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="" data-hover="Экстерьер">Экстерьер</a>
+                                    <a href="" data-hover="Экстерьер" class="go__header__nav__level1">Экстерьер</a>
+                                    <span class="go__header__mob-toggle__close" data-bs-toggle="collapse" data-bs-target="#navMainMenu">
+                                        <svg class="icon" width="13" height="13">
+                                            <use xlink:href="#svg-close2"></use>
+                                        </svg>
+                                    </span>
+                                    <div class="navbar-nav__sub">
+                                        <div class="row">
+                                            <div class="col-lg-3 fpad30">
+                                                <a href="" class="navbar-nav__sub__level1">Воздушная система</a>
+                                                <ul class="nav d-block navbar-nav__sub__level2">
+                                                    <li><a href="">Фильтры</a></li>
+                                                    <li><a href="">Шноркели</a></li>
+                                                    <li><a href="">Патрубки</a></li>
+                                                    <li><a href="">Впуск</a></li>
+                                                </ul>
+                                                <a href="" class="navbar-nav__sub__more">Показать еще</a>
+                                            </div>
+                                            <div class="col-lg-3 fpad30">
+                                                <a href="" class="navbar-nav__sub__level1">Внутренние компоненты</a>
+                                                <ul class="nav d-block navbar-nav__sub__level2">
+                                                    <li><a href="">Шатунно-поршневая группа</a></li>
+                                                    <li><a href="">Прокладки / сальники / опоры</a></li>
+                                                    <li><a href="">Гбц и компоненты</a></li>
+                                                    <li><a href="">Валы / вкладыши</a></li>
+                                                    <li><a href="">Система смазки</a></li>
+                                                </ul>
+                                                <a href="" class="navbar-nav__sub__more">Показать еще</a>
+                                            </div>
+                                            <div class="col-lg-3 fpad30">
+                                                <a href="" class="navbar-nav__sub__level1">Турбо</a>
+                                                <ul class="nav d-block navbar-nav__sub__level2">
+                                                    <li><a href="">Вестгейт</a></li>
+                                                    <li><a href="">Перепускные клапана</a></li>
+                                                    <li><a href="">Патрубки</a></li>
+                                                    <li><a href="">Турбо кит</a></li>
+                                                </ul>
+                                                <a href="" class="navbar-nav__sub__more">Показать еще</a>
+                                            </div>
+                                            <div class="col-lg-3 fpad30">
+                                                <a href="" class="navbar-nav__sub__level1">Охлаждение</a>
+                                                <ul class="nav d-block navbar-nav__sub__level2">
+                                                    <li><a href="">Радиаторы</a></li>
+                                                    <li><a href="">Патрубки</a></li>
+                                                    <li><a href="">Помпы / термостаты</a></li>
+                                                    <li><a href="">Вентиляторы</a></li>
+                                                </ul>
+                                                <a href="" class="navbar-nav__sub__more">Показать еще</a>
+                                            </div>
+                                            <div class="col-lg-3 fpad30">
+                                                <a href="" class="navbar-nav__sub__level1">Топливная система</a>
+                                                <ul class="nav d-block navbar-nav__sub__level2">
+                                                    <li><a href="">Насосы / рейки</a></li>
+                                                    <li><a href="">Регуляторы / измерители</a></li>
+                                                    <li><a href="">Баки</a></li>
+                                                    <li><a href="">Фитинги / горловины</a></li>
+                                                    <li><a href="">Присадки / фильтры</a></li>
+                                                    <li><a href="">Форсунки</a></li>
+                                                </ul>
+                                                <a href="" class="navbar-nav__sub__more">Показать еще</a>
+                                            </div>
+                                            <div class="col-lg-3 fpad30">
+                                                <a href="" class="navbar-nav__sub__level1"> Выхлопная система</a>
+                                                <ul class="nav d-block navbar-nav__sub__level2">
+                                                    <li><a href="">Выхлоп в сборе</a></li>
+                                                    <li><a href="">Банки выхлопа</a></li>
+                                                    <li><a href="">Термолента / аэрозоли</a></li>
+                                                    <li><a href="">Прокладки / крепеж</a></li>
+                                                </ul>
+                                                <a href="" class="navbar-nav__sub__more">Показать еще</a>
+                                            </div>
+                                            <div class="col-lg-3 fpad30">
+                                                <a href="" class="navbar-nav__sub__level1">Электрика</a>
+                                                <ul class="nav d-block navbar-nav__sub__level2">
+                                                    <li><a href="">Свечи / провода</a></li>
+                                                    <li><a href="">Чип тюнинг</a></li>
+                                                    <li><a href="">Контроллеры</a></li>
+                                                    <li><a href="">Прочее</a></li>
+                                                </ul>
+                                                <a href="" class="navbar-nav__sub__more">Показать еще</a>
+                                            </div>
+                                            <div class="col-lg-3 fpad30">
+                                                <a href="" class="navbar-nav__sub__level1">Система смазки</a>
+                                                <ul class="nav d-block navbar-nav__sub__level2">
+                                                    <li><a href="">Двигатель</a></li>
+                                                    <li><a href="">Трансмиссия</a></li>
+                                                    <li><a href="">Охлаждение</a></li>
+                                                    <li><a href="">Смазки / пропитки</a></li>
+                                                    <li><a href="">Фильтры</a></li>
+                                                </ul>
+                                                <a href="" class="navbar-nav__sub__more">Показать еще</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li class="nav-item">
                                     <a href="" data-hover="Подвеска">Подвеска</a>
