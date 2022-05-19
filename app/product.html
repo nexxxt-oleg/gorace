@@ -203,6 +203,40 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="tpad25 fpad25 go__page-product__sku">
+                        <div class="d-flex align-items-center pb-3">
+                            <div class="col-w20">
+                                <span class="fonts-13 font-bold">Варианты расцветки:</span>
+                            </div>
+                            <div class="flex-grow-1">
+                                <select name="color" class="go__select">
+                                    <option>Черный/Серебристый/Белый</option>
+                                    <option>Черный</option>
+                                    <option>Белый</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center ">
+                            <div class="col-w20">
+                                <span class="fonts-13 font-bold">Размер:</span>
+                            </div>
+                            <div class="flex-grow-1">
+                                <select name="size" class="go__select">
+                                    <option>58 (XL-XXL)</option>
+                                    <option>54</option>
+                                    <option>53</option>
+                                </select>
+                            </div>
+                        </div> <div class="d-flex align-items-center">
+                            <div class="col-w20">
+                            </div>
+                            <div class="flex-grow-1">
+                                <a href="" class="go__link-border" >Таблица размеров Alpinestars</a>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="d-flex tpad25 align-items-end fpad25">
                         <div class="col-w20">
                             <div class="go__product-item__price h-auto">
@@ -211,7 +245,7 @@
                             </div>
                         </div>
                         <div class="flex-grow-1">
-                            <a href="" class="go__link-border">Нашли дешевле? Снизим цену!</a>
+                            <a href="#priceModal" class="go__link-border" data-bs-toggle="modal" data-bs-target="#priceModal">Нашли дешевле? Снизим цену!</a>
                         </div>
                     </div>
                     <div class="d-flex fpad25">
@@ -223,8 +257,11 @@
                             </div>
                         </div>
                         <div class="flex-grow-1">
-                            <button class="go__btn go__btn--red w-100">
-                                <span>В корзину</span>
+                            <button class="go__btn go__btn--red w-100" data-bs-toggle="modal" data-bs-target="#bayModal">
+                                <svg class="icon" width="28" height="24">
+                                    <use xlink:href="#svg-cart"></use>
+                                </svg>
+                                <span class="only-pc ml-10">В корзину</span>
                             </button>
                         </div>
                     </div>

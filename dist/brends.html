@@ -49,20 +49,27 @@
                             </button>
                         </div>
                         <div class="go__header__top__right">
-                            <div class="go__header__search">
+                            <div class="go__header__search" id="headerSearch">
+
                                 <form action="" class="go__header__search__form">
+                                    <div class="go__header__search__mob-back" id="headerSearchClose">
+                                        <svg class="icon" width="13" height="10">
+                                            <use xlink:href="#svg-prev"></use>
+                                        </svg>
+                                    </div>
                                     <input type="text" placeholder="Поиск" required class="go__header__search__inp">
                                     <button class="go__header__search__submit" type="submit">
                                         <svg class="icon" width="16" height="16">
                                             <use xlink:href="#svg-search"></use>
                                         </svg>
+                                        <span>НАЙТИ</span>
                                     </button>
                                 </form>
                             </div>
 
                             <div class="d-flex align-items-center go__header__top__icons">
                                 <div class="go__header__search--mob">
-                                    <a href="" class="go__header__search__open">
+                                    <a href="" class="go__header__search__open" id="mobSearch">
                                         <svg class="icon" width="24" height="24">
                                             <use xlink:href="#svg-search"></use>
                                         </svg>
@@ -162,7 +169,7 @@
                                     </svg>
                                 </span>
                             </div>
-                            <ul class="navbar-nav justify-content-between w-100">
+                            <ul class="navbar-nav navbar-nav--level1 justify-content-between w-100">
                                 <li class="nav-item">
                                     <a href=""
                                        data-hover="Двигатель"
@@ -174,21 +181,28 @@
                                             </svg>
                                         </div>
                                         <span>Двигатель</span>
-                                        <div class="go__header__nav__level1__close">
-                                            <svg class="icon" width="13" height="13">
-                                                <use xlink:href="#svg-close2"></use>
-                                            </svg>
-                                        </div>
                                         <div class="go__header__nav__level1__more">
                                             <svg class="icon" width="13" height="13">
                                                 <use xlink:href="#svg-down"></use>
                                             </svg>
                                         </div>
                                     </a>
+                                    <span class="go__header__mob-toggle__close" data-bs-toggle="collapse" data-bs-target="#navMainMenu">
+                                        <svg class="icon" width="13" height="13">
+                                            <use xlink:href="#svg-close2"></use>
+                                        </svg>
+                                    </span>
                                     <div class="navbar-nav__sub">
                                         <div class="row">
                                             <div class="col-lg-3 fpad30">
-                                                <a href="" class="navbar-nav__sub__level1">Воздушная система</a>
+                                                <a href="" class="navbar-nav__sub__level1 js-level2">
+                                                    Воздушная система
+                                                    <div class="go__header__nav__level2__toggle">
+                                                        <svg class="icon" width="13" height="13">
+                                                            <use xlink:href="#svg-down"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
                                                 <ul class="nav d-block navbar-nav__sub__level2">
                                                     <li><a href="">Фильтры</a></li>
                                                     <li><a href="">Шноркели</a></li>
@@ -198,7 +212,14 @@
                                                 <a href="" class="navbar-nav__sub__more">Показать еще</a>
                                             </div>
                                             <div class="col-lg-3 fpad30">
-                                                <a href="" class="navbar-nav__sub__level1">Внутренние компоненты</a>
+                                                <a href="" class="navbar-nav__sub__level1 js-level2">
+                                                    Внутренние компоненты
+                                                    <div class="go__header__nav__level2__toggle">
+                                                        <svg class="icon" width="13" height="13">
+                                                            <use xlink:href="#svg-down"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
                                                 <ul class="nav d-block navbar-nav__sub__level2">
                                                     <li><a href="">Шатунно-поршневая группа</a></li>
                                                     <li><a href="">Прокладки / сальники / опоры</a></li>
@@ -209,7 +230,14 @@
                                                 <a href="" class="navbar-nav__sub__more">Показать еще</a>
                                             </div>
                                             <div class="col-lg-3 fpad30">
-                                                <a href="" class="navbar-nav__sub__level1">Турбо</a>
+                                                <a href="" class="navbar-nav__sub__level1 js-level2">
+                                                    Турбо
+                                                    <div class="go__header__nav__level2__toggle">
+                                                        <svg class="icon" width="13" height="13">
+                                                            <use xlink:href="#svg-down"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
                                                 <ul class="nav d-block navbar-nav__sub__level2">
                                                     <li><a href="">Вестгейт</a></li>
                                                     <li><a href="">Перепускные клапана</a></li>
@@ -219,7 +247,14 @@
                                                 <a href="" class="navbar-nav__sub__more">Показать еще</a>
                                             </div>
                                             <div class="col-lg-3 fpad30">
-                                                <a href="" class="navbar-nav__sub__level1">Охлаждение</a>
+                                                <a href="" class="navbar-nav__sub__level1 js-level2">
+                                                    Охлаждение
+                                                    <div class="go__header__nav__level2__toggle">
+                                                        <svg class="icon" width="13" height="13">
+                                                            <use xlink:href="#svg-down"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
                                                 <ul class="nav d-block navbar-nav__sub__level2">
                                                     <li><a href="">Радиаторы</a></li>
                                                     <li><a href="">Патрубки</a></li>
@@ -229,7 +264,14 @@
                                                 <a href="" class="navbar-nav__sub__more">Показать еще</a>
                                             </div>
                                             <div class="col-lg-3 fpad30">
-                                                <a href="" class="navbar-nav__sub__level1">Топливная система</a>
+                                                <a href="" class="navbar-nav__sub__level1 js-level2">
+                                                    Топливная система
+                                                    <div class="go__header__nav__level2__toggle">
+                                                        <svg class="icon" width="13" height="13">
+                                                            <use xlink:href="#svg-down"></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
                                                 <ul class="nav d-block navbar-nav__sub__level2">
                                                     <li><a href="">Насосы / рейки</a></li>
                                                     <li><a href="">Регуляторы / измерители</a></li>
@@ -284,17 +326,17 @@
                                             </svg>
                                         </div>
                                         <span>Интерьер</span>
-                                        <div class="go__header__nav__level1__close">
-                                            <svg class="icon" width="13" height="13">
-                                                <use xlink:href="#svg-close2"></use>
-                                            </svg>
-                                        </div>
                                         <div class="go__header__nav__level1__more">
                                             <svg class="icon" width="13" height="13">
                                                 <use xlink:href="#svg-down"></use>
                                             </svg>
                                         </div>
                                     </a>
+                                    <span class="go__header__mob-toggle__close" data-bs-toggle="collapse" data-bs-target="#navMainMenu">
+                                        <svg class="icon" width="13" height="13">
+                                            <use xlink:href="#svg-close2"></use>
+                                        </svg>
+                                    </span>
                                     <div class="navbar-nav__sub">
                                         <div class="row">
                                             <div class="col-lg-3 fpad30">
@@ -385,7 +427,12 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" data-hover="Экстерьер">Экстерьер</a>
+                                    <a href="" data-hover="Экстерьер" class="go__header__nav__level1">Экстерьер</a>
+                                    <span class="go__header__mob-toggle__close" data-bs-toggle="collapse" data-bs-target="#navMainMenu">
+                                        <svg class="icon" width="13" height="13">
+                                            <use xlink:href="#svg-close2"></use>
+                                        </svg>
+                                    </span>
                                     <div class="navbar-nav__sub">
                                         <div class="row">
                                             <div class="col-lg-3 fpad30">
@@ -502,9 +549,19 @@
         </div>
         <div class="go__header__dop-nav">
             <div class="collapse" id="navDopMenu">
+                <div class="go__header__dop-nav__header-mob">
+                    <div class="container">
+                        <img src="images/dist/logo.svg" width="160" height="19" alt="">
+                        <span class="go__header__dop-nav__close" data-bs-toggle="collapse" data-bs-target="#navDopMenu">
+                            <svg class="icon" width="13" height="13">
+                                <use xlink:href="#svg-close2"></use>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
                 <div class="container">
                     <div class="row go__header__dop-nav__row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 go__header__dop-nav__col-soc">
                             <div class="go__header__dop-nav__caption">GO RACE в социальных сетях</div>
                             <ul class="nav go__soc">
     <li>
@@ -741,7 +798,7 @@
             </a>
         </div>
         <div class="row">
-            <div class="col-lg-3 fpad50">
+            <div class="col-lg-3 fpad50 go__footer-col-nav">
                 <nav class="atb__footer__nav">
                     <div class="atb__footer__nav__caption">Каталог товаров</div>
                     <ul class="nav d-block atb__footer__nav__list">
@@ -756,7 +813,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-lg-3 fpad50">
+            <div class="col-lg-3 fpad50 go__footer-col-nav">
                 <nav class="atb__footer__nav">
                     <div class="atb__footer__nav__caption">Покупателям</div>
                     <ul class="nav d-block atb__footer__nav__list">
@@ -767,7 +824,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-lg-3 fpad50">
+            <div class="col-lg-3 fpad50 go__footer-col-nav">
                 <nav class="atb__footer__nav">
                     <div class="atb__footer__nav__caption">О магазине</div>
                     <ul class="nav d-block atb__footer__nav__list">
@@ -836,6 +893,9 @@
         </div>
     </div>
 </footer>
+
+
+
 </div>
 
 
@@ -976,6 +1036,107 @@
                         <span class="text-uppercase">выслать</span>
                     </button>
                     <a href="#regModal" data-bs-target="#regModal" data-bs-toggle="modal" data-bs-dismiss="modal">Авторизация</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="priceModal" tabindex="-1" >
+    <div class="modal-dialog go__modal">
+        <div class="modal-dialog go__modal">
+            <div class="modal-content">
+                <button class="go__modal__btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg class="icon" width="20" height="20">
+                        <use xlink:href="#svg-close2"></use>
+                    </svg>
+                </button>
+                <div class="go__form">
+                    <div class="go__form__desc pt15">
+                        <div class="h2">Нашли дешевле? Снизим цену!</div>
+                    </div>
+                    <div class="go__form__row">
+                        <label class="form-label">Имя*</label>
+                        <input type="text" class="form-control" name="name" required>
+                    </div>
+                    <div class="go__form__row">
+                        <label class="form-label">Телефон*</label>
+                        <input type="tel" class="form-control js-inp-tel" name="tel" required>
+                    </div>
+                    <div class="go__form__row">
+                        <label class="form-label">Ссылка на найденный товар*</label>
+                        <input type="text" class="form-control" name="url" required>
+                    </div>
+                    <div class="go__form__row">
+                        <label class="form-label">Комментарий</label>
+                        <textarea name="comment" class="form-control" ></textarea>
+                    </div>
+                    <div class="go__form__footer">
+                        <button type="submit" class="go__btn go__btn--red go__btn--h40 mb-25">
+                            <span class="text-uppercase">ОТПРАВИТЬ</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="costModal" tabindex="-1" >
+    <div class="modal-dialog go__modal">
+        <div class="modal-dialog go__modal">
+            <div class="modal-content">
+                <button class="go__modal__btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg class="icon" width="20" height="20">
+                        <use xlink:href="#svg-close2"></use>
+                    </svg>
+                </button>
+                <div class="go__form">
+                    <div class="go__form__desc pt15">
+                        <div class="h2">Запросить цену</div>
+                    </div>
+                    <div class="go__form__row">
+                        <label class="form-label">Имя*</label>
+                        <input type="text" class="form-control" name="name" required>
+                    </div>
+                    <div class="go__form__row">
+                        <label class="form-label">Телефон*</label>
+                        <input type="tel" class="form-control js-inp-tel" name="tel" required>
+                    </div>
+                    <div class="go__form__row">
+                        <label class="form-label">E-mail*</label>
+                        <input type="email" class="form-control" name="email" required>
+                    </div>
+                    <div class="go__form__footer">
+                        <button type="submit" class="go__btn go__btn--black go__btn--h40 mb-25">
+                            <span class="text-uppercase">ЗАПРОСИТЬ ЦЕНУ</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="bayModal" tabindex="-1" >
+    <div class="modal-dialog go__modal">
+        <div class="modal-dialog go__modal">
+            <div class="modal-content modal-content--width">
+                <div class="go__form__desc pt15">
+                    <div class="h2">Нашли дешевле? Снизим цену!</div>
+                </div>
+                <div class="row">
+                    <div class="col-6 mb-25">
+                        <button class="go__btn go__btn--black go__btn--h40" data-bs-dismiss="modal" aria-label="Close">
+                            <span>ПРОДОЛЖИТЬ ПОКУПКИ</span>
+                        </button>
+                    </div>
+                    <div class="col-lg-6 mb-25">
+                        <a href="" class="go__btn go__btn--red go__btn--h40 w-100">
+                            <span class="text-uppercase">ПЕРЕЙТИ В корзину</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

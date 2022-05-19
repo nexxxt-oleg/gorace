@@ -76,7 +76,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Disable preloading of all images
             preloadImages: false,
             // Enable lazy loading
-            lazy: true,
+            lazy: {
+                loadPrevNext: true,
+            },
             slidesPerView: 4,
             spaceBetween: 10,
             navigation: {
@@ -85,12 +87,13 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             breakpoints: {
                 300: {
-                    slidesPerView: 1,
+                    slidesPerView: 'auto',
+                    scrollbar: {
+                        el: '#hitSliderScroll',
+                        draggable: true,
+                    },
                 },
-                440: {
-                    slidesPerView: 2,
-                },
-                600: {
+                768: {
                     slidesPerView: 2,
                 },
                 991: {
@@ -126,9 +129,17 @@ document.addEventListener('DOMContentLoaded', () => {
             breakpoints: {
                 300: {
                     slidesPerView: 2,
+                    scrollbar: {
+                        el: '#brandSliderScroll',
+                        draggable: true,
+                    },
                 },
                 440: {
                     slidesPerView: 3,
+                    scrollbar: {
+                        el: '#brandSliderScroll',
+                        draggable: true,
+                    },
                 },
                 600: {
                     slidesPerView: 4,
@@ -279,7 +290,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-
+    if (document.getElementById('mobSearch')) {
+        document.getElementById('mobSearch').addEventListener('click', function (e) {
+            document.getElementById('headerSearch').classList.toggle('active_search');
+            e.preventDefault();
+        });
+    }
+    if (document.getElementById('headerSearchClose')) {
+        document.getElementById('headerSearchClose').addEventListener('click', function (e) {
+            document.getElementById('headerSearch').classList.toggle('active_search');
+            e.preventDefault();
+        });
+    }
 
 });
 

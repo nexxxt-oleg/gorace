@@ -48,20 +48,27 @@
                             </button>
                         </div>
                         <div class="go__header__top__right">
-                            <div class="go__header__search">
+                            <div class="go__header__search" id="headerSearch">
+
                                 <form action="" class="go__header__search__form">
+                                    <div class="go__header__search__mob-back" id="headerSearchClose">
+                                        <svg class="icon" width="13" height="10">
+                                            <use xlink:href="#svg-prev"></use>
+                                        </svg>
+                                    </div>
                                     <input type="text" placeholder="Поиск" required class="go__header__search__inp">
                                     <button class="go__header__search__submit" type="submit">
                                         <svg class="icon" width="16" height="16">
                                             <use xlink:href="#svg-search"></use>
                                         </svg>
+                                        <span>НАЙТИ</span>
                                     </button>
                                 </form>
                             </div>
 
                             <div class="d-flex align-items-center go__header__top__icons">
                                 <div class="go__header__search--mob">
-                                    <a href="" class="go__header__search__open">
+                                    <a href="" class="go__header__search__open" id="mobSearch">
                                         <svg class="icon" width="24" height="24">
                                             <use xlink:href="#svg-search"></use>
                                         </svg>
@@ -541,9 +548,19 @@
         </div>
         <div class="go__header__dop-nav">
             <div class="collapse" id="navDopMenu">
+                <div class="go__header__dop-nav__header-mob">
+                    <div class="container">
+                        <img src="images/dist/logo.svg" width="160" height="19" alt="">
+                        <span class="go__header__dop-nav__close" data-bs-toggle="collapse" data-bs-target="#navDopMenu">
+                            <svg class="icon" width="13" height="13">
+                                <use xlink:href="#svg-close2"></use>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
                 <div class="container">
                     <div class="row go__header__dop-nav__row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 go__header__dop-nav__col-soc">
                             <div class="go__header__dop-nav__caption">GO RACE в социальных сетях</div>
                             <!--#include virtual="/parts/soc.html" -->
                         </div>
