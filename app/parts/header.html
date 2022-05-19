@@ -86,14 +86,37 @@
                                 </div>
                                 <div class="go__header__top__col-login">
                                     <div class="go__header__lk-link">
-                                        <a class="go__header__top__login active" data-bs-toggle="modal"
+                                        <!-- если не авторизован -->
+                                        <!--a class="go__header__top__login active" data-bs-toggle="modal"
                                            data-bs-target="#regModal" href="#regModal">
                                             <svg class="icon" width="23" height="24">
                                                 <use xlink:href="#svg-user"></use>
                                             </svg>
+                                        </a-->
+
+                                        <!-- если авторизован -->
+                                        <a class="go__header__top__login" id="lkMobMenuOpen" href="">
+                                            <svg class="icon" width="23" height="24">
+                                                <use xlink:href="#svg-user"></use>
+                                            </svg>
                                         </a>
-                                        <nav class="go__header__lk-link__sub-menu">
+
+                                        <nav class="go__header__lk-link__sub-menu" id="lkMobMenu">
                                             <ul class="nav d-block">
+                                                <li class="go__header__lk-mob-header">
+                                                    <span>
+                                                        <svg class="icon" width="23" height="24">
+                                                            <use xlink:href="#svg-user"></use>
+                                                        </svg>
+                                                        Личный кабинет
+                                                    </span>
+
+                                                    <div class="go__header__lk-mob-header__close" id="lkMobMenuClose">
+                                                        <svg class="icon" width="13" height="13">
+                                                            <use xlink:href="#svg-close2"></use>
+                                                        </svg>
+                                                    </div>
+                                                </li>
                                                 <li>
                                                     <a href="">
                                                         <div class="go__header__lk-link__sub-menu__ico">

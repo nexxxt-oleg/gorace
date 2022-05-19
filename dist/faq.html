@@ -87,14 +87,37 @@
                                 </div>
                                 <div class="go__header__top__col-login">
                                     <div class="go__header__lk-link">
-                                        <a class="go__header__top__login active" data-bs-toggle="modal"
+                                        <!-- если не авторизован -->
+                                        <!--a class="go__header__top__login active" data-bs-toggle="modal"
                                            data-bs-target="#regModal" href="#regModal">
                                             <svg class="icon" width="23" height="24">
                                                 <use xlink:href="#svg-user"></use>
                                             </svg>
+                                        </a-->
+
+                                        <!-- если авторизован -->
+                                        <a class="go__header__top__login" id="lkMobMenuOpen" href="">
+                                            <svg class="icon" width="23" height="24">
+                                                <use xlink:href="#svg-user"></use>
+                                            </svg>
                                         </a>
-                                        <nav class="go__header__lk-link__sub-menu">
+
+                                        <nav class="go__header__lk-link__sub-menu" id="lkMobMenu">
                                             <ul class="nav d-block">
+                                                <li class="go__header__lk-mob-header">
+                                                    <span>
+                                                        <svg class="icon" width="23" height="24">
+                                                            <use xlink:href="#svg-user"></use>
+                                                        </svg>
+                                                        Личный кабинет
+                                                    </span>
+
+                                                    <div class="go__header__lk-mob-header__close" id="lkMobMenuClose">
+                                                        <svg class="icon" width="13" height="13">
+                                                            <use xlink:href="#svg-close2"></use>
+                                                        </svg>
+                                                    </div>
+                                                </li>
                                                 <li>
                                                     <a href="">
                                                         <div class="go__header__lk-link__sub-menu__ico">
@@ -639,7 +662,7 @@
 </div>
 <div class="container">
     <div class="row fpad50">
-        <div class="col-lg-3 fpad30">
+        <div class="col-lg-3 fpad30 go__faq-sb">
             <div class="nav flex-column go__left-tabs" role="tablist" aria-orientation="vertical">
                 <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
                         data-bs-target="#v-pills-tab1" role="tab"
@@ -659,7 +682,8 @@
             </div>
         </div>
         <div class="col-lg-9 fpad50">
-            <div class="tab-content">
+            <div class="tab-content go__faq-tab">
+                <div class="go__faq-tab__mob-caption">Общие вопросы</div>
                 <div class="tab-pane fade show active" id="v-pills-tab1" role="tabpanel">
                     <div class="accordion atb__accordion">
                         <div class="atb__accordion__item atb__accordion__item--v2">
@@ -702,10 +726,10 @@
                     </div>
 
                 </div>
+                <div class="go__faq-tab__mob-caption">Доставка и оплата</div>
                 <div class="tab-pane fade" id="v-pills-tab2" role="tabpanel">...</div>
+                <div class="go__faq-tab__mob-caption">Гарантия и возврат</div>
                 <div class="tab-pane fade" id="v-pills-tab3" role="tabpanel">...</div>
-
-
             </div>
         </div>
     </div>
@@ -1338,10 +1362,20 @@
         </symbol>
 
         <symbol id="svg-collapse" viewBox="0 0 512 512">
-            <path fill="currentColor" d="M176.79,0H59.21A59.28,59.28,0,0,0,0,59.21V176.79A59.28,59.28,0,0,0,59.21,236H176.79A59.28,59.28,0,0,0,236,176.79V59.21A59.28,59.28,0,0,0,176.79,0ZM196,176.79A19.23,19.23,0,0,1,176.79,196H59.21A19.23,19.23,0,0,1,40,176.79V59.21A19.23,19.23,0,0,1,59.21,40H176.79A19.23,19.23,0,0,1,196,59.21Z"/>
-            <path fill="currentColor" d="M452,0H336a60.07,60.07,0,0,0-60,60V176a60.07,60.07,0,0,0,60,60H452a60.07,60.07,0,0,0,60-60V60A60.07,60.07,0,0,0,452,0Zm20,176a20,20,0,0,1-20,20H336a20,20,0,0,1-20-20V60a20,20,0,0,1,20-20H452a20,20,0,0,1,20,20Z"/>
-            <path fill="currentColor" d="M176.79,276H59.21A59.28,59.28,0,0,0,0,335.21V452.79A59.28,59.28,0,0,0,59.21,512H176.79A59.28,59.28,0,0,0,236,452.79V335.21A59.28,59.28,0,0,0,176.79,276ZM196,452.79A19.23,19.23,0,0,1,176.79,472H59.21A19.23,19.23,0,0,1,40,452.79V335.21A19.23,19.23,0,0,1,59.21,316H176.79A19.23,19.23,0,0,1,196,335.21Z"/>
-            <path fill="currentColor" d="M452,276H336a60.07,60.07,0,0,0-60,60V452a60.07,60.07,0,0,0,60,60H452a60.07,60.07,0,0,0,60-60V336A60.07,60.07,0,0,0,452,276Zm20,176a20,20,0,0,1-20,20H336a20,20,0,0,1-20-20V336a20,20,0,0,1,20-20H452a20,20,0,0,1,20,20Z"/>
+            <path fill="currentColor"
+                  d="M176.79,0H59.21A59.28,59.28,0,0,0,0,59.21V176.79A59.28,59.28,0,0,0,59.21,236H176.79A59.28,59.28,0,0,0,236,176.79V59.21A59.28,59.28,0,0,0,176.79,0ZM196,176.79A19.23,19.23,0,0,1,176.79,196H59.21A19.23,19.23,0,0,1,40,176.79V59.21A19.23,19.23,0,0,1,59.21,40H176.79A19.23,19.23,0,0,1,196,59.21Z"/>
+            <path fill="currentColor"
+                  d="M452,0H336a60.07,60.07,0,0,0-60,60V176a60.07,60.07,0,0,0,60,60H452a60.07,60.07,0,0,0,60-60V60A60.07,60.07,0,0,0,452,0Zm20,176a20,20,0,0,1-20,20H336a20,20,0,0,1-20-20V60a20,20,0,0,1,20-20H452a20,20,0,0,1,20,20Z"/>
+            <path fill="currentColor"
+                  d="M176.79,276H59.21A59.28,59.28,0,0,0,0,335.21V452.79A59.28,59.28,0,0,0,59.21,512H176.79A59.28,59.28,0,0,0,236,452.79V335.21A59.28,59.28,0,0,0,176.79,276ZM196,452.79A19.23,19.23,0,0,1,176.79,472H59.21A19.23,19.23,0,0,1,40,452.79V335.21A19.23,19.23,0,0,1,59.21,316H176.79A19.23,19.23,0,0,1,196,335.21Z"/>
+            <path fill="currentColor"
+                  d="M452,276H336a60.07,60.07,0,0,0-60,60V452a60.07,60.07,0,0,0,60,60H452a60.07,60.07,0,0,0,60-60V336A60.07,60.07,0,0,0,452,276Zm20,176a20,20,0,0,1-20,20H336a20,20,0,0,1-20-20V336a20,20,0,0,1,20-20H452a20,20,0,0,1,20,20Z"/>
+        </symbol>
+
+        <symbol id="svg-filter" viewBox="0 0 512 512.05">
+            <path fill="currentColor" d="M21.33,101.36H79.7a79.53,79.53,0,0,0,153.49,0H490.67a21.34,21.34,0,0,0,0-42.67H233.19a79.53,79.53,0,0,0-153.49,0H21.33a21.34,21.34,0,0,0,0,42.67ZM156.44,42.69A37.34,37.34,0,1,1,119.1,80,37.33,37.33,0,0,1,156.44,42.69Z"/>
+            <path fill="currentColor" d="M490.67,234.69H432.3a79.51,79.51,0,0,0-153.47,0H21.33a21.34,21.34,0,0,0,0,42.67h257.5a79.51,79.51,0,0,0,153.47,0h58.37a21.34,21.34,0,0,0,0-42.67ZM355.56,293.36A37.34,37.34,0,1,1,392.9,256,37.33,37.33,0,0,1,355.56,293.36Z"/>
+            <path fill="currentColor" d="M490.67,410.69H233.19a79.53,79.53,0,0,0-153.49,0H21.33a21.34,21.34,0,0,0,0,42.67H79.7a79.53,79.53,0,0,0,153.49,0H490.67a21.34,21.34,0,0,0,0-42.67ZM156.44,469.36A37.34,37.34,0,1,1,193.77,432,37.34,37.34,0,0,1,156.44,469.36Z"/>
         </symbol>
 
     </svg>

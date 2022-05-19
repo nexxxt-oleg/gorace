@@ -87,14 +87,37 @@
                                 </div>
                                 <div class="go__header__top__col-login">
                                     <div class="go__header__lk-link">
-                                        <a class="go__header__top__login active" data-bs-toggle="modal"
+                                        <!-- если не авторизован -->
+                                        <!--a class="go__header__top__login active" data-bs-toggle="modal"
                                            data-bs-target="#regModal" href="#regModal">
                                             <svg class="icon" width="23" height="24">
                                                 <use xlink:href="#svg-user"></use>
                                             </svg>
+                                        </a-->
+
+                                        <!-- если авторизован -->
+                                        <a class="go__header__top__login" id="lkMobMenuOpen" href="">
+                                            <svg class="icon" width="23" height="24">
+                                                <use xlink:href="#svg-user"></use>
+                                            </svg>
                                         </a>
-                                        <nav class="go__header__lk-link__sub-menu">
+
+                                        <nav class="go__header__lk-link__sub-menu" id="lkMobMenu">
                                             <ul class="nav d-block">
+                                                <li class="go__header__lk-mob-header">
+                                                    <span>
+                                                        <svg class="icon" width="23" height="24">
+                                                            <use xlink:href="#svg-user"></use>
+                                                        </svg>
+                                                        Личный кабинет
+                                                    </span>
+
+                                                    <div class="go__header__lk-mob-header__close" id="lkMobMenuClose">
+                                                        <svg class="icon" width="13" height="13">
+                                                            <use xlink:href="#svg-close2"></use>
+                                                        </svg>
+                                                    </div>
+                                                </li>
                                                 <li>
                                                     <a href="">
                                                         <div class="go__header__lk-link__sub-menu__ico">
@@ -640,20 +663,20 @@
 
 <div class="container">
     <div class="row fpad50">
-        <div class="col-lg-3 fpad30">
+        <div class="col-lg-3 col-md-4 fpad30">
             <div class="accordion atb__accordion">
-                <div class="atb__accordion__item">
-                     <div class="atb__accordion__item__header"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseOne" >
-                         Категория
+                <div class="atb__accordion__item go__filter-catalog">
+                    <div class="atb__accordion__item__header collapsed"
+                         data-bs-toggle="collapse"
+                         data-bs-target="#collapseOne">
+                        Категория
 
-                         <svg class="icon" width="14" height="8">
-                             <use xlink:href="#svg-down"></use>
-                         </svg>
-                     </div>
+                        <svg class="icon" width="14" height="8">
+                            <use xlink:href="#svg-down"></use>
+                        </svg>
+                    </div>
                     <div id="collapseOne"
-                         class="accordion-collapse collapse show" >
+                         class="accordion-collapse collapse">
                         <div class="atb__accordion__item__body">
                             <ul class="nav d-block atb__list-categories">
                                 <li><a href="">Днища</a></li>
@@ -680,106 +703,135 @@
                         </div>
                     </div>
                 </div>
-                <div class="atb__accordion__item">
-                    <div class="atb__accordion__item__header "
-                         data-bs-toggle="collapse"
-                         data-bs-target="#collapseTwo" >
-                        Производитель
-                        <svg class="icon" width="14" height="8">
-                            <use xlink:href="#svg-down"></use>
-                        </svg>
-                    </div>
-                    <div id="collapseTwo" class="accordion-collapse collapse show">
-                        <div class="atb__accordion__item__body">
-                            <div class="atb__res-filter">
-                                Выбрано: 16
-                                <a href="" class="go__btn go__btn--black w-100 go__btn--h40">
-                                    <span>Показать</span>
-                                </a>
+                <div class="go__mob-filter-toggle" id="filterMobOpen">
+                    Фильтры
+                    <svg class="icon" width="16" height="16">
+                        <use xlink:href="#svg-filter"></use>
+                    </svg>
+                </div>
+                <div class="go__filter-list" id="filterMob">
+                    <div class="go__filter-list__wrap">
+                        <div class="go__filter-list__header">
+                            <div class="go__filter-list__header__wrap">
+                                <span>фильтры</span>
+                                <div class="go__filter-list__close" id="filterMobClose">
+                                    <svg class="icon" width="16" height="16">
+                                        <use xlink:href="#svg-close2"></use>
+                                    </svg>
+                                </div>
                             </div>
-                            <ul class="nav d-block atb__list-filter">
-                                <li>
-                                    <label class="atb__checkbox">
-                                        <input type="checkbox" checked value="1" name="p">
-                                        <span class="atb__checkbox__label">POLARIS <span class="atb__list-filter__number">16</span></span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="atb__checkbox">
-                                        <input type="checkbox" value="1" name="p">
-                                        <span class="atb__checkbox__label">POLARIS <span class="atb__list-filter__number">16</span></span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="atb__checkbox">
-                                        <input type="checkbox" value="1" name="p">
-                                        <span class="atb__checkbox__label">POLARIS <span class="atb__list-filter__number">16</span></span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="atb__checkbox">
-                                        <input type="checkbox" value="1" name="p">
-                                        <span class="atb__checkbox__label">POLARIS <span class="atb__list-filter__number">16</span></span>
-                                    </label>
-                                </li>
-                            </ul>
+                        </div>
+                        <div class="go__filter-list__body">
+                            <div class="atb__accordion__item">
+                                <div class="atb__accordion__item__header collapsed"
+                                     data-bs-toggle="collapse"
+                                     data-bs-target="#collapseTwo">
+                                    Производитель
+                                    <svg class="icon" width="14" height="8">
+                                        <use xlink:href="#svg-down"></use>
+                                    </svg>
+                                </div>
+                                <div id="collapseTwo" class="accordion-collapse collapse show">
+                                    <div class="atb__accordion__item__body">
+                                        <div class="atb__res-filter">
+                                            Выбрано: 16
+                                            <a href="" class="go__btn go__btn--black w-100 go__btn--h40">
+                                                <span>Показать</span>
+                                            </a>
+                                        </div>
+                                        <ul class="nav d-block atb__list-filter">
+                                            <li>
+                                                <label class="atb__checkbox">
+                                                    <input type="checkbox" checked value="1" name="p">
+                                                    <span class="atb__checkbox__label">POLARIS <span
+                                                            class="atb__list-filter__number">16</span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="atb__checkbox">
+                                                    <input type="checkbox" value="1" name="p">
+                                                    <span class="atb__checkbox__label">POLARIS <span
+                                                            class="atb__list-filter__number">16</span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="atb__checkbox">
+                                                    <input type="checkbox" value="1" name="p">
+                                                    <span class="atb__checkbox__label">POLARIS <span
+                                                            class="atb__list-filter__number">16</span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="atb__checkbox">
+                                                    <input type="checkbox" value="1" name="p">
+                                                    <span class="atb__checkbox__label">POLARIS <span
+                                                            class="atb__list-filter__number">16</span></span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="atb__accordion__item">
+                                <div class="atb__accordion__item__header collapsed"
+                                     data-bs-toggle="collapse"
+                                     data-bs-target="#collapse3">
+                                    Производитель
+                                    <svg class="icon" width="14" height="8">
+                                        <use xlink:href="#svg-down"></use>
+                                    </svg>
+                                </div>
+                                <div id="collapse3" class="accordion-collapse collapse">
+                                    <div class="atb__accordion__item__body">
+                                        <ul class="nav d-block atb__list-filter">
+                                            <li>
+                                                <label class="atb__checkbox">
+                                                    <input type="checkbox" checked value="1" name="p">
+                                                    <span class="atb__checkbox__label">POLARIS <span
+                                                            class="atb__list-filter__number">16</span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="atb__checkbox">
+                                                    <input type="checkbox" value="1" name="p">
+                                                    <span class="atb__checkbox__label">POLARIS <span
+                                                            class="atb__list-filter__number">16</span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="atb__checkbox">
+                                                    <input type="checkbox" value="1" name="p">
+                                                    <span class="atb__checkbox__label">POLARIS <span
+                                                            class="atb__list-filter__number">16</span></span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="atb__checkbox">
+                                                    <input type="checkbox" value="1" name="p">
+                                                    <span class="atb__checkbox__label">POLARIS <span
+                                                            class="atb__list-filter__number">16</span></span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="atb__accordion__item">
-                    <div class="atb__accordion__item__header collapsed"
-                         data-bs-toggle="collapse"
-                         data-bs-target="#collapse3" >
-                        Производитель
-                        <svg class="icon" width="14" height="8">
-                            <use xlink:href="#svg-down"></use>
-                        </svg>
-                    </div>
-                    <div id="collapse3" class="accordion-collapse collapse" >
-                        <div class="atb__accordion__item__body">
-                            <ul class="nav d-block atb__list-filter">
-                                <li>
-                                    <label class="atb__checkbox">
-                                        <input type="checkbox" checked value="1" name="p">
-                                        <span class="atb__checkbox__label">POLARIS <span class="atb__list-filter__number">16</span></span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="atb__checkbox">
-                                        <input type="checkbox" value="1" name="p">
-                                        <span class="atb__checkbox__label">POLARIS <span class="atb__list-filter__number">16</span></span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="atb__checkbox">
-                                        <input type="checkbox" value="1" name="p">
-                                        <span class="atb__checkbox__label">POLARIS <span class="atb__list-filter__number">16</span></span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="atb__checkbox">
-                                        <input type="checkbox" value="1" name="p">
-                                        <span class="atb__checkbox__label">POLARIS <span class="atb__list-filter__number">16</span></span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
-        <div class="col-lg-9 fpad30">
+        <div class="col-lg-9 col-md-8 fpad30">
             <div class="atb__sort-top">
                 <span class="atb__sort-top__label">Упорядочить по:</span>
                 <div class="dropdown atb__sort-top__list dropdown-menu-end">
-                    <button class="dropdown-toggle"  data-bs-toggle="dropdown" >
+                    <button class="dropdown-toggle" data-bs-toggle="dropdown">
                         Последние поступления
                         <svg class="icon" width="18" height="17">
                             <use xlink:href="#svg-sort"></use>
                         </svg>
                     </button>
-                    <ul class="dropdown-menu" >
+                    <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Последние поступления</a></li>
                         <li><a class="dropdown-item" href="#">По алфавиту (А-Я)</a></li>
                         <li><a class="dropdown-item" href="#">Сначала дешевые</a></li>
@@ -824,7 +876,12 @@
         </div>
         <div class="go__product-item__bay-col">
             <button class="go__btn go__btn--red w-100 go__btn--h40">
-                <span>В корзину</span>
+                <span class="only-pc">В корзину</span>
+                <div class="only-mob">
+                    <svg class="icon" width="20" height="18">
+                        <use xlink:href="#svg-cart"></use>
+                    </svg>
+                </div>
             </button>
         </div>
     </div>
@@ -866,7 +923,12 @@
         </div>
         <div class="go__product-item__bay-col">
             <button class="go__btn go__btn--red w-100 go__btn--h40">
-                <span>В корзину</span>
+                <span class="only-pc">В корзину</span>
+                <div class="only-mob">
+                    <svg class="icon" width="20" height="18">
+                        <use xlink:href="#svg-cart"></use>
+                    </svg>
+                </div>
             </button>
         </div>
     </div>
@@ -908,7 +970,12 @@
         </div>
         <div class="go__product-item__bay-col">
             <button class="go__btn go__btn--red w-100 go__btn--h40">
-                <span>В корзину</span>
+                <span class="only-pc">В корзину</span>
+                <div class="only-mob">
+                    <svg class="icon" width="20" height="18">
+                        <use xlink:href="#svg-cart"></use>
+                    </svg>
+                </div>
             </button>
         </div>
     </div>
@@ -950,7 +1017,12 @@
         </div>
         <div class="go__product-item__bay-col">
             <button class="go__btn go__btn--red w-100 go__btn--h40">
-                <span>В корзину</span>
+                <span class="only-pc">В корзину</span>
+                <div class="only-mob">
+                    <svg class="icon" width="20" height="18">
+                        <use xlink:href="#svg-cart"></use>
+                    </svg>
+                </div>
             </button>
         </div>
     </div>
@@ -991,7 +1063,12 @@
         </div>
         <div class="go__product-item__bay-col">
             <button class="go__btn go__btn--red w-100 go__btn--h40">
-                <span>В корзину</span>
+                <span class="only-pc">В корзину</span>
+                <div class="only-mob">
+                    <svg class="icon" width="20" height="18">
+                        <use xlink:href="#svg-cart"></use>
+                    </svg>
+                </div>
             </button>
         </div>
     </div>
@@ -1064,7 +1141,12 @@
         </div>
         <div class="go__product-item__bay-col">
             <button class="go__btn go__btn--red w-100 go__btn--h40">
-                <span>В корзину</span>
+                <span class="only-pc">В корзину</span>
+                <div class="only-mob">
+                    <svg class="icon" width="20" height="18">
+                        <use xlink:href="#svg-cart"></use>
+                    </svg>
+                </div>
             </button>
         </div>
     </div>
@@ -1106,7 +1188,12 @@
         </div>
         <div class="go__product-item__bay-col">
             <button class="go__btn go__btn--red w-100 go__btn--h40">
-                <span>В корзину</span>
+                <span class="only-pc">В корзину</span>
+                <div class="only-mob">
+                    <svg class="icon" width="20" height="18">
+                        <use xlink:href="#svg-cart"></use>
+                    </svg>
+                </div>
             </button>
         </div>
     </div>
@@ -1147,7 +1234,12 @@
         </div>
         <div class="go__product-item__bay-col">
             <button class="go__btn go__btn--red w-100 go__btn--h40">
-                <span>В корзину</span>
+                <span class="only-pc">В корзину</span>
+                <div class="only-mob">
+                    <svg class="icon" width="20" height="18">
+                        <use xlink:href="#svg-cart"></use>
+                    </svg>
+                </div>
             </button>
         </div>
     </div>
@@ -1841,10 +1933,20 @@
         </symbol>
 
         <symbol id="svg-collapse" viewBox="0 0 512 512">
-            <path fill="currentColor" d="M176.79,0H59.21A59.28,59.28,0,0,0,0,59.21V176.79A59.28,59.28,0,0,0,59.21,236H176.79A59.28,59.28,0,0,0,236,176.79V59.21A59.28,59.28,0,0,0,176.79,0ZM196,176.79A19.23,19.23,0,0,1,176.79,196H59.21A19.23,19.23,0,0,1,40,176.79V59.21A19.23,19.23,0,0,1,59.21,40H176.79A19.23,19.23,0,0,1,196,59.21Z"/>
-            <path fill="currentColor" d="M452,0H336a60.07,60.07,0,0,0-60,60V176a60.07,60.07,0,0,0,60,60H452a60.07,60.07,0,0,0,60-60V60A60.07,60.07,0,0,0,452,0Zm20,176a20,20,0,0,1-20,20H336a20,20,0,0,1-20-20V60a20,20,0,0,1,20-20H452a20,20,0,0,1,20,20Z"/>
-            <path fill="currentColor" d="M176.79,276H59.21A59.28,59.28,0,0,0,0,335.21V452.79A59.28,59.28,0,0,0,59.21,512H176.79A59.28,59.28,0,0,0,236,452.79V335.21A59.28,59.28,0,0,0,176.79,276ZM196,452.79A19.23,19.23,0,0,1,176.79,472H59.21A19.23,19.23,0,0,1,40,452.79V335.21A19.23,19.23,0,0,1,59.21,316H176.79A19.23,19.23,0,0,1,196,335.21Z"/>
-            <path fill="currentColor" d="M452,276H336a60.07,60.07,0,0,0-60,60V452a60.07,60.07,0,0,0,60,60H452a60.07,60.07,0,0,0,60-60V336A60.07,60.07,0,0,0,452,276Zm20,176a20,20,0,0,1-20,20H336a20,20,0,0,1-20-20V336a20,20,0,0,1,20-20H452a20,20,0,0,1,20,20Z"/>
+            <path fill="currentColor"
+                  d="M176.79,0H59.21A59.28,59.28,0,0,0,0,59.21V176.79A59.28,59.28,0,0,0,59.21,236H176.79A59.28,59.28,0,0,0,236,176.79V59.21A59.28,59.28,0,0,0,176.79,0ZM196,176.79A19.23,19.23,0,0,1,176.79,196H59.21A19.23,19.23,0,0,1,40,176.79V59.21A19.23,19.23,0,0,1,59.21,40H176.79A19.23,19.23,0,0,1,196,59.21Z"/>
+            <path fill="currentColor"
+                  d="M452,0H336a60.07,60.07,0,0,0-60,60V176a60.07,60.07,0,0,0,60,60H452a60.07,60.07,0,0,0,60-60V60A60.07,60.07,0,0,0,452,0Zm20,176a20,20,0,0,1-20,20H336a20,20,0,0,1-20-20V60a20,20,0,0,1,20-20H452a20,20,0,0,1,20,20Z"/>
+            <path fill="currentColor"
+                  d="M176.79,276H59.21A59.28,59.28,0,0,0,0,335.21V452.79A59.28,59.28,0,0,0,59.21,512H176.79A59.28,59.28,0,0,0,236,452.79V335.21A59.28,59.28,0,0,0,176.79,276ZM196,452.79A19.23,19.23,0,0,1,176.79,472H59.21A19.23,19.23,0,0,1,40,452.79V335.21A19.23,19.23,0,0,1,59.21,316H176.79A19.23,19.23,0,0,1,196,335.21Z"/>
+            <path fill="currentColor"
+                  d="M452,276H336a60.07,60.07,0,0,0-60,60V452a60.07,60.07,0,0,0,60,60H452a60.07,60.07,0,0,0,60-60V336A60.07,60.07,0,0,0,452,276Zm20,176a20,20,0,0,1-20,20H336a20,20,0,0,1-20-20V336a20,20,0,0,1,20-20H452a20,20,0,0,1,20,20Z"/>
+        </symbol>
+
+        <symbol id="svg-filter" viewBox="0 0 512 512.05">
+            <path fill="currentColor" d="M21.33,101.36H79.7a79.53,79.53,0,0,0,153.49,0H490.67a21.34,21.34,0,0,0,0-42.67H233.19a79.53,79.53,0,0,0-153.49,0H21.33a21.34,21.34,0,0,0,0,42.67ZM156.44,42.69A37.34,37.34,0,1,1,119.1,80,37.33,37.33,0,0,1,156.44,42.69Z"/>
+            <path fill="currentColor" d="M490.67,234.69H432.3a79.51,79.51,0,0,0-153.47,0H21.33a21.34,21.34,0,0,0,0,42.67h257.5a79.51,79.51,0,0,0,153.47,0h58.37a21.34,21.34,0,0,0,0-42.67ZM355.56,293.36A37.34,37.34,0,1,1,392.9,256,37.33,37.33,0,0,1,355.56,293.36Z"/>
+            <path fill="currentColor" d="M490.67,410.69H233.19a79.53,79.53,0,0,0-153.49,0H21.33a21.34,21.34,0,0,0,0,42.67H79.7a79.53,79.53,0,0,0,153.49,0H490.67a21.34,21.34,0,0,0,0-42.67ZM156.44,469.36A37.34,37.34,0,1,1,193.77,432,37.34,37.34,0,0,1,156.44,469.36Z"/>
         </symbol>
 
     </svg>

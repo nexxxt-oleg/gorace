@@ -296,9 +296,32 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
         });
     }
+
     if (document.getElementById('headerSearchClose')) {
         document.getElementById('headerSearchClose').addEventListener('click', function (e) {
             document.getElementById('headerSearch').classList.toggle('active_search');
+            e.preventDefault();
+        });
+    }
+
+    if (document.getElementById('filterMobOpen')) {
+        document.getElementById('filterMobOpen').addEventListener('click', function (e) {
+            document.getElementById('filterMob').classList.add('active_filter');
+            e.preventDefault();
+        });
+        document.getElementById('filterMobClose').addEventListener('click', function (e) {
+            document.getElementById('filterMob').classList.remove('active_filter');
+            e.preventDefault();
+        });
+    }
+
+    if (document.getElementById('lkMobMenu') && window.screen.width < 575) {
+        document.getElementById('lkMobMenuOpen').addEventListener('click', function (e) {
+            document.getElementById('lkMobMenu').classList.add('active_menu');
+            e.preventDefault();
+        });
+        document.getElementById('lkMobMenuClose').addEventListener('click', function (e) {
+            document.getElementById('lkMobMenu').classList.remove('active_menu');
             e.preventDefault();
         });
     }
