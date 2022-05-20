@@ -674,7 +674,7 @@
                     />
                 </a>
             </div>
-            <div class="col-lg-9 col-sm-8 go__text">
+            <div class="col-lg-9 col-sm-8 go__text fpad50">
                 <p>Японский производитель мототехники. Изначально часть Yamaha Corporation. Компания производит и другую
                     моторизированную технику: вездеходы, лодки, снегоходы, лодочные моторы, и катера.</p>
 
@@ -685,8 +685,9 @@
     <div class="row fpad50">
         <div class="col-lg-3 col-sm-4 fpad30">
             <div class="accordion atb__accordion">
-                <div class="atb__accordion__item atb__accordion__item--no-border">
+                <div class="atb__accordion__item atb__accordion__item--no-border go__filter-catalog">
                     <div class="atb__accordion__item__header"
+                         id="collapseCatNav"
                          data-bs-toggle="collapse"
                          data-bs-target="#collapseOne">
                         Категория
@@ -780,8 +781,8 @@
         </div>
         <div class="go__product-item__bay-col">
             <button class="go__btn go__btn--red w-100 go__btn--h40">
-                <span class="only-pc">В корзину</span>
-                <div class="only-mob">
+                <span class="go__btn__caption">В корзину</span>
+                <div class="go__btn__ico">
                     <svg class="icon" width="20" height="18">
                         <use xlink:href="#svg-cart"></use>
                     </svg>
@@ -827,8 +828,8 @@
         </div>
         <div class="go__product-item__bay-col">
             <button class="go__btn go__btn--red w-100 go__btn--h40">
-                <span class="only-pc">В корзину</span>
-                <div class="only-mob">
+                <span class="go__btn__caption">В корзину</span>
+                <div class="go__btn__ico">
                     <svg class="icon" width="20" height="18">
                         <use xlink:href="#svg-cart"></use>
                     </svg>
@@ -874,8 +875,8 @@
         </div>
         <div class="go__product-item__bay-col">
             <button class="go__btn go__btn--red w-100 go__btn--h40">
-                <span class="only-pc">В корзину</span>
-                <div class="only-mob">
+                <span class="go__btn__caption">В корзину</span>
+                <div class="go__btn__ico">
                     <svg class="icon" width="20" height="18">
                         <use xlink:href="#svg-cart"></use>
                     </svg>
@@ -921,8 +922,8 @@
         </div>
         <div class="go__product-item__bay-col">
             <button class="go__btn go__btn--red w-100 go__btn--h40">
-                <span class="only-pc">В корзину</span>
-                <div class="only-mob">
+                <span class="go__btn__caption">В корзину</span>
+                <div class="go__btn__ico">
                     <svg class="icon" width="20" height="18">
                         <use xlink:href="#svg-cart"></use>
                     </svg>
@@ -967,8 +968,8 @@
         </div>
         <div class="go__product-item__bay-col">
             <button class="go__btn go__btn--red w-100 go__btn--h40">
-                <span class="only-pc">В корзину</span>
-                <div class="only-mob">
+                <span class="go__btn__caption">В корзину</span>
+                <div class="go__btn__ico">
                     <svg class="icon" width="20" height="18">
                         <use xlink:href="#svg-cart"></use>
                     </svg>
@@ -1045,8 +1046,8 @@
         </div>
         <div class="go__product-item__bay-col">
             <button class="go__btn go__btn--red w-100 go__btn--h40">
-                <span class="only-pc">В корзину</span>
-                <div class="only-mob">
+                <span class="go__btn__caption">В корзину</span>
+                <div class="go__btn__ico">
                     <svg class="icon" width="20" height="18">
                         <use xlink:href="#svg-cart"></use>
                     </svg>
@@ -1092,8 +1093,8 @@
         </div>
         <div class="go__product-item__bay-col">
             <button class="go__btn go__btn--red w-100 go__btn--h40">
-                <span class="only-pc">В корзину</span>
-                <div class="only-mob">
+                <span class="go__btn__caption">В корзину</span>
+                <div class="go__btn__ico">
                     <svg class="icon" width="20" height="18">
                         <use xlink:href="#svg-cart"></use>
                     </svg>
@@ -1138,8 +1139,8 @@
         </div>
         <div class="go__product-item__bay-col">
             <button class="go__btn go__btn--red w-100 go__btn--h40">
-                <span class="only-pc">В корзину</span>
-                <div class="only-mob">
+                <span class="go__btn__caption">В корзину</span>
+                <div class="go__btn__ico">
                     <svg class="icon" width="20" height="18">
                         <use xlink:href="#svg-cart"></use>
                     </svg>
@@ -1502,7 +1503,7 @@
                 </button>
                 <div class="go__form">
                     <div class="go__form__desc pt15">
-                        <div class="h2">Нашли дешевле? Снизим цену!</div>
+                        <div class="h2">Нашли дешевле? <span>Снизим цену!</span></div>
                     </div>
                     <div class="go__form__row">
                         <label class="form-label">Имя*</label>
@@ -1572,11 +1573,13 @@
         <div class="modal-dialog go__modal">
             <div class="modal-content modal-content--width">
                 <div class="go__form__desc pt15">
-                    <div class="h2">Нашли дешевле? Снизим цену!</div>
+                    <div class="h2">
+                        Товар добавлен в <span>вашу корзину!</span>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-6 mb-25">
-                        <button class="go__btn go__btn--black go__btn--h40" data-bs-dismiss="modal" aria-label="Close">
+                    <div class="col-lg-6 mb-25">
+                        <button class="go__btn go__btn--black go__btn--h40 w-100" data-bs-dismiss="modal" aria-label="Close">
                             <span>ПРОДОЛЖИТЬ ПОКУПКИ</span>
                         </button>
                     </div>

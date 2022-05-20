@@ -909,3 +909,25 @@ textarea.form-control {
 .go__faq-tab__mob-caption {
   display: none;
 }
+.go__order__collapse__toggle:not(.collapsed) {
+  svg {
+    transform: rotate(-180deg);
+  }
+}
+.go__order-info__top-label {
+  white-space: nowrap;
+}
+.go__item-product__right {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  width: 200px;
+}
+.order-info__label-mob,
+.go__page-product__tab__mob-caption,
+.go__btn__ico {
+  display: none;
+}
+.go__page-product__data {
+  margin-left: auto;
+}

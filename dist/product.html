@@ -859,7 +859,7 @@
                     </div>
 
                     <div class="tpad25 fpad25 go__page-product__sku">
-                        <div class="d-flex align-items-center pb-3">
+                        <div class="d-flex align-items-center pb-3 go__page-product__sku__item">
                             <div class="col-w20">
                                 <span class="fonts-13 font-bold">Варианты расцветки:</span>
                             </div>
@@ -871,7 +871,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center ">
+                        <div class="d-flex align-items-center go__page-product__sku__item">
                             <div class="col-w20">
                                 <span class="fonts-13 font-bold">Размер:</span>
                             </div>
@@ -883,7 +883,7 @@
                                 </select>
                             </div>
                         </div> <div class="d-flex align-items-center">
-                            <div class="col-w20">
+                            <div class="col-w20 hidden-575">
                             </div>
                             <div class="flex-grow-1">
                                 <a href="" class="go__link-border" >Таблица размеров Alpinestars</a>
@@ -898,7 +898,7 @@
                                 <span class="price price--big">55 930 руб.</span>
                             </div>
                         </div>
-                        <div class="flex-grow-1">
+                        <div class="flex-grow-1 only-pc">
                             <a href="#priceModal" class="go__link-border" data-bs-toggle="modal" data-bs-target="#priceModal">Нашли дешевле? Снизим цену!</a>
                         </div>
                     </div>
@@ -915,25 +915,28 @@
                                 <svg class="icon" width="28" height="24">
                                     <use xlink:href="#svg-cart"></use>
                                 </svg>
-                                <span class="only-pc ml-10">В корзину</span>
+                                <span class="ml-10">В корзину</span>
                             </button>
                         </div>
                     </div>
+                    <div class="only-mob fpad25">
+                        <a href="#priceModal" class="go__link-border" data-bs-toggle="modal" data-bs-target="#priceModal">Нашли дешевле? Снизим цену!</a>
+                    </div>
                     <div class="go__page-product__info-box">
-                        <div class="d-flex align-items-center">
-                            <div class="col-4 go__page-product__info-box__item">
+                        <div class="d-flex flex-wrap align-items-center">
+                            <div class="col-md-4 col-12 go__page-product__info-box__item">
                                 <svg class="icon" width="17" height="18">
                                     <use xlink:href="#svg-ico-delivery"></use>
                                 </svg>
                                 Условия доставки
                             </div>
-                            <div class="col-4 go__page-product__info-box__item">
+                            <div class="col-md-4 col-12 go__page-product__info-box__item">
                                 <svg class="icon" width="18" height="18">
                                     <use xlink:href="#svg-ico-oplata"></use>
                                 </svg>
                                 Способы оплаты
                             </div>
-                            <div class="col-4 go__page-product__info-box__item">
+                            <div class="col-md-4 col-12 go__page-product__info-box__item">
                                 <svg class="icon" width="18" height="18">
                                     <use xlink:href="#svg-ico-return"></use>
                                 </svg>
@@ -991,9 +994,10 @@
                 </li>
             </ul>
 
-            <div class="tab-content" id="nav-tabContent">
+            <div class="tab-content go__tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-desc">
-                    <div class="go__text tpad25">
+                    <div class="go__page-product__tab__mob-caption">Описание</div>
+                    <div class="go__text tpad25 fpad15">
                         <p><b>Система сепараторной очистки воздуха двигателя для Polaris RZR XP 1000 ( все годы
                             производства включая Polaris 2016 RZR XP TURBO )</b></p>
                         <p>Данная технология применяется на военных вертолетах, работающих в пустыне и позволяет удалить
@@ -1309,7 +1313,7 @@
                 </button>
                 <div class="go__form">
                     <div class="go__form__desc pt15">
-                        <div class="h2">Нашли дешевле? Снизим цену!</div>
+                        <div class="h2">Нашли дешевле? <span>Снизим цену!</span></div>
                     </div>
                     <div class="go__form__row">
                         <label class="form-label">Имя*</label>
@@ -1379,11 +1383,13 @@
         <div class="modal-dialog go__modal">
             <div class="modal-content modal-content--width">
                 <div class="go__form__desc pt15">
-                    <div class="h2">Нашли дешевле? Снизим цену!</div>
+                    <div class="h2">
+                        Товар добавлен в <span>вашу корзину!</span>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-6 mb-25">
-                        <button class="go__btn go__btn--black go__btn--h40" data-bs-dismiss="modal" aria-label="Close">
+                    <div class="col-lg-6 mb-25">
+                        <button class="go__btn go__btn--black go__btn--h40 w-100" data-bs-dismiss="modal" aria-label="Close">
                             <span>ПРОДОЛЖИТЬ ПОКУПКИ</span>
                         </button>
                     </div>

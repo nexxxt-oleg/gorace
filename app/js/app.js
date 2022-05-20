@@ -228,6 +228,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    if (document.getElementById('collapseCatNav') && window.screen.width < 575) {
+        document.getElementById('collapseCatNav').click();
+    }
+
 
     let phones = document.getElementsByClassName('js-inp-tel');
     if(phones.length > 0) {
