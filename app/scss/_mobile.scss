@@ -1171,6 +1171,16 @@
   .go__page-product__specifications {
     padding-top: 20px;
   }
+  .go__filter-list__footer {
+    background-color: #fff;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #f4f4f4;
+    .row {
+      max-width: 574px;
+      margin: 0 auto;
+    }
+  }
 }
 
 @media screen and (max-width: 575px) {
